@@ -1186,7 +1186,7 @@ const COURSE_DATA = {
           explanation: "Vous pouvez et devez formuler vos réserves par écrit directement sur le document d'état des lieux. Cela préserve vos droits tout en permettant de finaliser la procédure."
         }
       ]
-    }
+    },
     // ─────────────────────────────────────────────────────────
     // CHAPITRE 7 — VMC, chaudière & équipements techniques
     // ─────────────────────────────────────────────────────────
