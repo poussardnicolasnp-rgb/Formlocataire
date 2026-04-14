@@ -8,6 +8,148 @@ const COURSE_DATA = {
 
   chapters: [
     // ─────────────────────────────────────────────────────────
+    // CHAPITRE 0 — Module d'accueil
+    // ─────────────────────────────────────────────────────────
+    {
+      id: 0,
+      title: "Prendre les clés de son logement",
+      subtitle: "Glossaire, équipements et premiers gestes essentiels",
+      icon: "🗝️",
+      duration: "12 min",
+      points: 50,
+      badgeId: "initie",
+      audioScript: "Bienvenue dans cette formation. Avant d'entrer dans le cœur du sujet, prenons le temps de comprendre les bases : les termes clés du logement en France, les documents à conserver précieusement, et les gestes indispensables à faire dès le premier jour dans votre logement.",
+      content: `
+        <h2>Bienvenue dans votre formation</h2>
+        <p>Cette formation vous accompagne pas à pas pour devenir un locataire confiant et bien informé. Avant d'entrer dans le vif du sujet, commençons par les fondamentaux : les termes à connaître, les documents indispensables, et les gestes à faire dès le premier jour.</p>
+        <div class="callout">🎯 <strong>Ce que vous allez apprendre ici :</strong> Les termes clés du logement en France, les équipements à identifier, les documents à conserver — et comment réussir votre état des lieux d'entrée dès le premier jour.</div>
+
+        <h2>📖 Glossaire — Les termes essentiels</h2>
+        <p>Le vocabulaire de la location peut sembler complexe au premier abord. Voici les termes que vous rencontrerez le plus souvent :</p>
+        <div class="example-box">
+          <div class="example-box-title">📋 Termes fondamentaux</div>
+          <table class="responsibility-table">
+            <thead><tr><th>Terme</th><th>Définition simple</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Bail</strong></td><td>Le contrat signé entre vous et le propriétaire. Il fixe la durée, le loyer et les règles de la location.</td></tr>
+              <tr><td><strong>Dépôt de garantie</strong></td><td>Somme versée à l'entrée (1 mois de loyer hors charges). Restituée à la sortie si le logement est en bon état.</td></tr>
+              <tr><td><strong>Charges locatives</strong></td><td>Dépenses collectives récupérées par le propriétaire : eau, parties communes, gardien, ascenseur…</td></tr>
+              <tr><td><strong>État des lieux</strong></td><td>Document décrivant l'état précis du logement à l'entrée et à la sortie. C'est votre protection principale.</td></tr>
+              <tr><td><strong>VMC</strong></td><td>Ventilation Mécanique Contrôlée — système qui renouvelle l'air en permanence. Présent dans presque tous les logements construits après 1970.</td></tr>
+              <tr><td><strong>DPE</strong></td><td>Diagnostic de Performance Énergétique — note de A à G indiquant la consommation d'énergie du logement.</td></tr>
+              <tr><td><strong>Préavis</strong></td><td>Délai à respecter pour prévenir le propriétaire de votre départ (1 mois en zone tendue, 3 mois ailleurs).</td></tr>
+              <tr><td><strong>LRAR</strong></td><td>Lettre Recommandée Avec Accusé de Réception — mode d'envoi requis pour les communications importantes.</td></tr>
+              <tr><td><strong>Quittance de loyer</strong></td><td>Reçu mensuel attestant le paiement de votre loyer. Conservez-les toutes.</td></tr>
+              <tr><td><strong>Réparations locatives</strong></td><td>Réparations d'entretien courant à votre charge, listées par le décret du 26 août 1987.</td></tr>
+              <tr><td><strong>Grille de vétusté</strong></td><td>Tableau définissant la durée de vie théorique des équipements. Permet de calculer la part restant à votre charge en cas de dégradation.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>🔧 Les équipements typiques d'un logement français</h2>
+        <p>Un logement en France est équipé d'installations que vous devez savoir identifier et entretenir dès votre arrivée :</p>
+        <ul>
+          <li><strong>La VMC</strong> — Des grilles situées en cuisine, salle de bain et WC. Elle fonctionne 24h/24 et ne doit JAMAIS être coupée ni obstruée. C'est elle qui prévient les moisissures. Un chapitre complet lui est consacré plus loin.</li>
+          <li><strong>La chaudière individuelle</strong> — Présente dans de nombreux logements pour le chauffage et l'eau chaude. Son entretien annuel par un professionnel est une <strong>obligation légale</strong> du locataire.</li>
+          <li><strong>Les radiateurs à eau</strong> — Alimentés par la chaudière, ils nécessitent une purge annuelle pour fonctionner correctement.</li>
+          <li><strong>Le tableau électrique (disjoncteur)</strong> — Situé dans l'entrée ou un placard. Il coupe le courant en cas de surcharge. <strong>Localisez-le dès votre arrivée.</strong></li>
+          <li><strong>Le robinet d'arrêt d'eau</strong> — Généralement sous l'évier. Il coupe l'arrivée d'eau. <strong>C'est votre premier réflexe en cas de fuite.</strong></li>
+          <li><strong>Le compteur Linky</strong> — Relève automatiquement votre consommation d'électricité. Notez son index à l'arrivée et au départ.</li>
+        </ul>
+
+        <h2>📁 Les 4 documents à conserver précieusement</h2>
+        <ul>
+          <li><strong>Le bail signé</strong> — Votre contrat de référence pour toute la durée de la location.</li>
+          <li><strong>L'état des lieux d'entrée signé</strong> — Votre protection contre toute retenue injustifiée à la sortie. Ne le perdez jamais.</li>
+          <li><strong>L'attestation d'assurance habitation</strong> — Obligatoire dès le premier jour. À présenter au propriétaire sur demande chaque année.</li>
+          <li><strong>Les quittances de loyer</strong> — Preuve du paiement de chaque loyer. Utiles pour vos futures demandes de logement.</li>
+        </ul>
+        <div class="callout callout-warning">⚠️ <strong>L'assurance habitation est obligatoire</strong> dès la remise des clés, sous peine de résiliation du bail. Souscrivez-la <em>avant</em> d'entrer dans le logement.</div>
+
+        <h2>🔍 L'état des lieux d'entrée — votre bouclier</h2>
+        <p>C'est le document le plus important de toute votre location. Il décrit l'état exact du logement au moment où vous prenez possession des clés. C'est sur cette base que tout sera comparé à votre départ.</p>
+        <div class="example-box">
+          <div class="example-box-title">✅ Ce qu'il faut faire le jour de la remise des clés</div>
+          <p><strong>1.</strong> Inspectez chaque pièce minutieusement — murs, plafonds, sols, fenêtres, équipements</p>
+          <p><strong>2.</strong> Testez tout — chaque interrupteur, prise, robinet, fenêtre et appareil électroménager</p>
+          <p><strong>3.</strong> Notez TOUS les défauts, même minimes (rayures, taches, poignées bancales, joints abîmés…)</p>
+          <p><strong>4.</strong> Prenez des <strong>photos datées</strong> de chaque pièce et de chaque défaut signalé</p>
+          <p><strong>5.</strong> Relevez les index des compteurs (eau, gaz, électricité) et inscrivez-les sur le document</p>
+          <p><strong>6.</strong> Signez seulement quand vous avez tout vérifié et noté</p>
+        </div>
+        <div class="callout callout-success">💡 <strong>Le droit des 10 jours :</strong> Même après signature, vous avez <strong>10 jours</strong> pour envoyer par LRAR tout défaut constaté après coup — par exemple un problème de chauffage visible seulement à la première mise en chauffe.</div>
+        <div class="callout callout-warning">⚠️ <strong>Sans état des lieux d'entrée,</strong> le logement est présumé vous avoir été remis en parfait état. Vous devrez le rendre dans le même état à la sortie. Insistez toujours pour en établir un.</div>
+
+        <h2>📅 Vos premières démarches administratives</h2>
+        <ul>
+          <li><strong>Ouvrir vos contrats d'énergie</strong> (électricité, gaz) à votre nom dès la prise de possession</li>
+          <li><strong>Souscrire l'assurance habitation</strong> avant même d'entrer dans le logement</li>
+          <li><strong>Déclarer votre nouvelle adresse</strong> — impôts, CAF, Sécurité sociale, banque, employeur</li>
+          <li><strong>Déclarer votre situation à la CAF dans les 30 jours</strong> si vous bénéficiez d'aides au logement (APL/ALS) — tout retard crée un trop-perçu à rembourser</li>
+          <li><strong>Faire suivre votre courrier</strong> via La Poste pour ne rien manquer pendant la transition</li>
+        </ul>
+      `,
+      quiz: [
+        {
+          question: "Qu'est-ce que le 'dépôt de garantie' dans une location ?",
+          options: [
+            "Le premier mois de loyer, déduit des futurs paiements",
+            "Une somme versée à l'entrée pour couvrir d'éventuelles dégradations, restituée à la sortie si le logement est rendu en bon état",
+            "Une assurance souscrite par le propriétaire",
+            "Les charges mensuelles payées en avance"
+          ],
+          correct: 1,
+          explanation: "Le dépôt de garantie est une somme versée à l'entrée (généralement 1 mois de loyer hors charges). Elle est restituée au locataire à la sortie si le logement est en bon état, déduction faite des éventuelles dégradations justifiées."
+        },
+        {
+          question: "À quoi sert la VMC dans un logement ?",
+          options: [
+            "À chauffer le logement en hiver",
+            "À renouveler l'air et évacuer l'humidité en permanence",
+            "À filtrer l'eau du robinet",
+            "À contrôler la consommation d'électricité"
+          ],
+          correct: 1,
+          explanation: "La VMC (Ventilation Mécanique Contrôlée) renouvelle l'air en permanence, évacue l'humidité et la vapeur de cuisine. Elle fonctionne 24h/24 et ne doit jamais être coupée ni obstruée."
+        },
+        {
+          question: "Combien de jours après la remise des clés peut-on compléter l'état des lieux d'entrée par courrier recommandé ?",
+          options: ["3 jours", "7 jours", "10 jours", "30 jours"],
+          correct: 2,
+          explanation: "La loi prévoit un délai de 10 jours après la remise des clés pour signaler par LRAR tout défaut constaté après la signature de l'état des lieux d'entrée, notamment les problèmes de chauffage visibles seulement à la première mise en chauffe."
+        },
+        {
+          question: "Quel document est le plus important pour protéger votre dépôt de garantie ?",
+          options: [
+            "Le contrat d'assurance habitation",
+            "L'état des lieux d'entrée signé",
+            "Les quittances de loyer",
+            "Le contrat de bail"
+          ],
+          correct: 1,
+          explanation: "L'état des lieux d'entrée signé est votre protection principale. Sans lui, le logement est présumé avoir été remis en parfait état, et vous devrez le rendre tel quel à la sortie."
+        },
+        {
+          question: "Que doit-on souscrire AVANT d'entrer dans le logement, sous peine de résiliation du bail ?",
+          options: [
+            "Un abonnement internet fixe",
+            "Une assurance habitation",
+            "Un contrat d'entretien de chaudière",
+            "Une garantie loyer impayé"
+          ],
+          correct: 1,
+          explanation: "L'assurance habitation est obligatoire dès la remise des clés. Le propriétaire peut résilier le bail si le locataire ne peut pas en justifier. Il faut la souscrire avant même d'entrer dans le logement."
+        },
+        {
+          question: "Dans quel délai doit-on déclarer un déménagement à la CAF si l'on bénéficie d'aides au logement ?",
+          options: ["Dans les 3 mois", "Dans les 6 mois", "Dans les 30 jours", "Avant la fin de l'année fiscale"],
+          correct: 2,
+          explanation: "Tout changement de situation doit être déclaré à la CAF dans les 30 jours. Un retard crée un trop-perçu d'aides qui devra être intégralement remboursé."
+        }
+      ]
+    },
+
+    // ─────────────────────────────────────────────────────────
     // CHAPITRE 1 — Le rôle du locataire
     // ─────────────────────────────────────────────────────────
     {
@@ -79,6 +221,23 @@ const COURSE_DATA = {
         </ul>
 
         <div class="callout callout-warning">⚠️ <strong>Attention :</strong> Si vous effectuez des réparations qui étaient à la charge du propriétaire sans son accord, vous ne pourrez généralement pas vous faire rembourser — sauf urgence avérée documentée par écrit.</div>
+
+        <h2>📊 La grille de vétusté — ce que vous ne payez pas</h2>
+        <p>La <strong>grille de vétusté</strong> (instaurée par la loi ALUR 2014) est un tableau qui définit la durée de vie théorique des équipements. Elle protège le locataire contre des demandes de remboursement disproportionnées.</p>
+        <div class="example-box">
+          <div class="example-box-title">📋 Durées de vie théoriques (exemples)</div>
+          <table class="responsibility-table">
+            <thead><tr><th>Élément</th><th>Durée de vie</th><th>Ce que ça signifie</th></tr></thead>
+            <tbody>
+              <tr><td>Peintures intérieures</td><td>7 ans</td><td>Une peinture de 5 ans → vous ne remboursez que 2/7 du coût</td></tr>
+              <tr><td>Papier peint</td><td>7 ans</td><td>Un papier de 8 ans qui se décolle → propriétaire à 100%</td></tr>
+              <tr><td>Moquette</td><td>7 ans</td><td>Moquette de 7 ans usée → propriétaire à 100%</td></tr>
+              <tr><td>Parquet vitrifié</td><td>10 ans</td><td>Parquet de 6 ans rayé → vous remboursez 4/10 du coût</td></tr>
+              <tr><td>Robinetterie</td><td>15 ans</td><td>Robinet de 12 ans → vous ne payez que 3/15 du remplacement</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="callout callout-success">✅ <strong>Bon à savoir :</strong> Si votre propriétaire ne peut pas prouver l'âge exact des équipements, la grille de vétusté s'applique par défaut à votre avantage.</div>
       `,
       quiz: [
         {
@@ -224,6 +383,31 @@ const COURSE_DATA = {
         </ul>
 
         <div class="callout callout-success">✅ <strong>Rappel des responsabilités du propriétaire :</strong> Sécurité du logement, grosses réparations (toiture, façade, canalisations encastrées), remplacement des équipements vétustes, pannes importantes d'équipements collectifs.</div>
+
+        <h2>🏗️ Entretenir selon les matériaux</h2>
+        <p>Chaque logement a ses propres surfaces. Utiliser le mauvais produit peut provoquer des dégradations irréversibles.</p>
+        <div class="example-box">
+          <div class="example-box-title">⚠️ Matériaux courants et erreurs à éviter</div>
+          <table class="responsibility-table">
+            <thead><tr><th>Surface</th><th>Méthode correcte</th><th>À éviter absolument</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Parquet flottant / stratifié</strong></td><td>Chiffon à peine humide, produit spécifique parquet</td><td>Eau en excès, vapeur, ammoniaque → fait gonfler et soulève les lames</td></tr>
+              <tr><td><strong>Carrelage grès cérame mat</strong></td><td>Détergent neutre dilué, rinçage soigné</td><td>Vinaigre blanc, acides → attaque la surface poreuse</td></tr>
+              <tr><td><strong>Papier peint</strong></td><td>Chiffon à peine humide, tamponner doucement</td><td>Eau, vapeur, spray → gonfle et décolle le papier</td></tr>
+              <tr><td><strong>Peinture lessivable</strong></td><td>Éponge douce + eau tiède savonneuse</td><td>Brosse abrasive, javel concentrée → attaque le liant</td></tr>
+              <tr><td><strong>Joints silicone douche</strong></td><td>Bicarbonate ou anti-moisissures spécifique</td><td>Javel répétée → corrode le silicone sur le long terme</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>🏢 Vie en copropriété — règles à connaître</h2>
+        <ul>
+          <li><strong>Le règlement de copropriété s'impose au locataire</strong> — Il peut notamment interdire les barbecues sur les balcons, imposer des horaires de bruit, réglementer les animaux.</li>
+          <li><strong>Le bruit nocturne commence à 22h</strong> (article R1334-31 du Code de la santé publique) — votre responsabilité est engagée pour les nuisances causées par vous ou vos invités.</li>
+          <li><strong>Les parties communes</strong> (couloirs, escaliers, hall) — il est interdit d'y déposer des affaires (vélos, poussettes, poubelles). Cela peut entraîner des amendes.</li>
+          <li><strong>Travaux bruyants</strong> — Généralement interdits le dimanche et les jours fériés, avant 8h ou après 20h en semaine. Vérifiez votre règlement.</li>
+          <li><strong>Le tri sélectif</strong> — Respectez les codes couleurs de votre commune : bac jaune (emballages plastique, cartons, canettes), bac vert (verre uniquement), bac noir (ordures ménagères). Les règles varient selon les villes.</li>
+        </ul>
       `,
       quiz: [
         {
@@ -382,6 +566,16 @@ const COURSE_DATA = {
         </ul>
 
         <div class="callout callout-success">🌱 <strong>Astuce naturelle :</strong> Le bicarbonate de soude absorbe les odeurs — placez un petit bol ouvert dans le réfrigérateur ou dans les placards pour neutraliser les mauvaises odeurs.</div>
+
+        <h2>📅 L'entretien par saison</h2>
+        <p>En France, les saisons imposent des gestes spécifiques. Anticiper, c'est éviter les problèmes.</p>
+        <div class="example-box">
+          <div class="example-box-title">🗓️ Ce qu'il faut faire chaque saison</div>
+          <p><strong>🍂 Automne (sept-oct) :</strong> Faire réviser la chaudière avant l'hiver. Purger les radiateurs. Vérifier l'étanchéité des fenêtres (joints usés = facture de chauffage élevée). Nettoyer les bouches VMC.</p>
+          <p><strong>❄️ Hiver (nov-mars) :</strong> Aérer 10 min/jour même par grand froid — c'est indispensable. Maintenir 16-18°C dans toutes les pièces pour éviter la condensation. Ne jamais sécher le linge sans ventiler. En cas d'absence longue : couper l'eau et purger les canalisations si grand gel prévu.</p>
+          <p><strong>🌸 Printemps (avr-mai) :</strong> Grand ménage d'aération intensive. Vérifier salle de bain et cuisine pour les moisissures nascentes. Première tonte/taille du jardin. Nettoyer les filtres si climatisation.</p>
+          <p><strong>☀️ Été (juin-août) :</strong> Fermer volets et rideaux en journée pour conserver la fraîcheur (geste souvent méconnu). Ouvrir les fenêtres la nuit pour ventiler. Traitement préventif anti-moustiques et nuisibles si nécessaire selon la région.</p>
+        </div>
       `,
       quiz: [
         {
@@ -712,6 +906,28 @@ const COURSE_DATA = {
         </ul>
 
         <div class="callout callout-success">📞 <strong>Numéros d'urgence à mémoriser :</strong> 15 (SAMU), 17 (Police), 18 (Pompiers), 112 (Urgences européen), 190 (ENEDIS urgences électriques), 0800 011 316 (GRDF urgences gaz).</div>
+
+        <h2>🚨 Fuite de gaz — procédure absolue</h2>
+        <div class="example-box">
+          <div class="example-box-title">🔴 En cas d'odeur de gaz — ne pas improviser</div>
+          <p><strong>1.</strong> Ne pas allumer ni éteindre aucun appareil électrique (interrupteur, téléphone, ascenseur)</p>
+          <p><strong>2.</strong> Fermer le robinet de gaz (derrière la cuisinière ou la chaudière)</p>
+          <p><strong>3.</strong> Ouvrir toutes les fenêtres grand</p>
+          <p><strong>4.</strong> Quitter le logement immédiatement</p>
+          <p><strong>5.</strong> Appeler <strong>GRDF : 0800 011 316</strong> (gratuit, 24h/24) depuis l'extérieur</p>
+          <p><strong>6.</strong> Ne pas réintégrer le logement avant validation par les secours</p>
+        </div>
+
+        <h2>🌧️ Dégât des eaux du voisin du dessus</h2>
+        <ul>
+          <li>Photographier immédiatement les dégâts (plafond, murs, mobilier)</li>
+          <li>Contacter votre voisin du dessus pour l'alerter</li>
+          <li>Déclarer le sinistre à votre assurance dans les <strong>5 jours ouvrables</strong> (48h en cas de vol)</li>
+          <li>Remplir un constat amiable de dégât des eaux avec le voisin si possible</li>
+          <li>Prévenir le propriétaire par écrit avec photos</li>
+          <li>Conserver toutes les preuves : photos, courriers, devis de réparation</li>
+        </ul>
+        <div class="callout callout-warning">⚠️ <strong>Délai impératif :</strong> Déclarer un sinistre à votre assurance après le délai légal peut entraîner le refus d'indemnisation. Ne tardez jamais.</div>
       `,
       quiz: [
         {
@@ -872,13 +1088,33 @@ const COURSE_DATA = {
           <li><strong>Demandez un exemplaire signé</strong> — Vous devez repartir avec votre copie</li>
         </ul>
 
-        <h2>💰 La caution et les retenues</h2>
-        <p>Le propriétaire dispose de :</p>
+        <h2>💰 La caution — tout ce que vous devez savoir</h2>
+        <div class="example-box">
+          <div class="example-box-title">⚖️ Délais légaux de restitution</div>
+          <p><strong>1 mois</strong> — si l'état des lieux de sortie est identique à l'état des lieux d'entrée (aucune dégradation constatée)</p>
+          <p><strong>2 mois</strong> — si des dégradations sont constatées, pour permettre l'établissement des devis</p>
+          <p><strong>Majoration de 10%</strong> — du loyer mensuel hors charges, due au locataire pour <em>chaque mois de retard</em> au-delà du délai légal. C'est un droit automatique.</p>
+        </div>
         <ul>
-          <li><strong>1 mois</strong> pour restituer la caution si l'état des lieux de sortie est identique à l'état des lieux d'entrée</li>
-          <li><strong>2 mois</strong> si des dégradations sont constatées</li>
+          <li><strong>Toute retenue doit être justifiée</strong> par un devis ou une facture. Sans justificatif, la retenue est illégale.</li>
+          <li><strong>La vétusté s'applique toujours</strong> — Le propriétaire ne peut pas facturer le remplacement d'une peinture à 100% si elle avait déjà 5 ans. La grille de vétusté réduit proportionnellement les sommes dues.</li>
+          <li><strong>Sans état des lieux d'entrée</strong> — Aucune retenue n'est possible : le logement est présumé avoir été remis en parfait état.</li>
+          <li><strong>Sans état des lieux de sortie contradictoire</strong> — Aucune retenue n'est possible non plus.</li>
+          <li><strong>En cas de litige</strong> — Saisir gratuitement la Commission Départementale de Conciliation (CDC) avant tout recours judiciaire.</li>
         </ul>
-        <p>Si des retenues sont effectuées, elles doivent être <strong>justifiées par des devis ou factures</strong>. Le propriétaire ne peut pas retenir plus que le coût réel des réparations.</p>
+
+        <h2>🔴 Les 7 causes principales de retenue sur caution</h2>
+        <p>Évitez ces erreurs et vous récupérez votre caution intégralement :</p>
+        <div class="example-box">
+          <div class="example-box-title">📋 Classement des motifs les plus fréquents</div>
+          <p><strong>1. Nettoyage insuffisant</strong> — Four encrassé, frigo non dégivré, joints noirs, sol non lavé. C'est la première cause de retenue en France.</p>
+          <p><strong>2. Trous dans les murs non rebouchés</strong> — Vis, chevilles, clous oubliés. Enduit + ponçage + retouche peinture obligatoires.</p>
+          <p><strong>3. Peinture dégradée</strong> — Traces de doigts, marques, couleur vive non neutralisée. Si vous avez peint en couleur, repeignez en blanc au départ si demandé.</p>
+          <p><strong>4. Sols tachés ou rayés</strong> — Liquide renversé sur parquet, brûlure de cigarette, rayures de meubles sans patins.</p>
+          <p><strong>5. Jardin non entretenu</strong> — Herbes folles, haie non taillée, pelouse non tondue.</p>
+          <p><strong>6. Absence d'attestation d'entretien chaudière</strong> — Retenue systématique si vous ne pouvez pas la présenter.</p>
+          <p><strong>7. Papier peint abîmé</strong> — Arraché, décollé, taché — même partiellement.</p>
+        </div>
 
         <div class="callout callout-success">🏆 <strong>L'objectif :</strong> Remettre le logement dans un état similaire à celui dans lequel vous l'avez reçu, compte tenu de l'usure normale par le temps et l'usage. Vous n'êtes pas responsable du vieillissement naturel du logement.</div>
       `,
@@ -951,18 +1187,173 @@ const COURSE_DATA = {
         }
       ]
     }
+    // ─────────────────────────────────────────────────────────
+    // CHAPITRE 7 — VMC, chaudière & équipements techniques
+    // ─────────────────────────────────────────────────────────
+    {
+      id: 7,
+      title: "VMC, chaudière & équipements",
+      subtitle: "Maîtriser les installations techniques de votre logement",
+      icon: "⚙️",
+      duration: "18 min",
+      points: 50,
+      badgeId: "technicien",
+      audioScript: "Votre logement est équipé d'installations techniques qui fonctionnent silencieusement : la VMC renouvelle l'air, la chaudière assure votre confort thermique, les radiateurs chauffent chaque pièce. Comprendre ces systèmes, savoir les entretenir et réagir en cas de problème, c'est vous protéger — et protéger votre caution.",
+      content: `
+        <h2>Des équipements que vous utilisez sans les voir</h2>
+        <p>Votre logement abrite des installations techniques qui fonctionnent en arrière-plan. Les comprendre, les entretenir et réagir correctement en cas de problème, c'est éviter des pannes coûteuses — et protéger votre caution.</p>
+        <div class="callout">🔧 <strong>À retenir :</strong> Certains entretiens sont une <strong>obligation légale</strong> du locataire. Les ignorer peut invalider votre assurance et justifier une retenue sur votre dépôt de garantie.</div>
+
+        <h2>💨 La VMC — comment ça fonctionne et comment l'entretenir</h2>
+        <p>La VMC est le système respiratoire de votre logement. Elle aspire en continu l'air vicié (humidité, vapeur de cuisine, odeurs) et le remplace par de l'air frais. Elle est présente dans presque tous les logements français construits depuis les années 1970.</p>
+        <div class="example-box">
+          <div class="example-box-title">📍 Où trouver les bouches de VMC ?</div>
+          <p>Les grilles d'extraction sont situées dans les pièces "humides" : <strong>cuisine, salle de bain, WC</strong>. L'air frais entre par les grilles en bas des portes des chambres et du salon.</p>
+        </div>
+        <ul>
+          <li><strong>Ne jamais couper ni débrancher la VMC</strong> — Même si elle fait un bruit léger. Elle fonctionne 24h/24, 365 jours/an. La couper provoque une accumulation d'humidité et des moisissures dont vous serez tenu responsable.</li>
+          <li><strong>Ne jamais boucher les grilles</strong> — Ni scotch, ni torchon, ni meuble placé devant. C'est une faute grave qui engage votre responsabilité.</li>
+          <li><strong>Nettoyer les grilles tous les 3 à 6 mois</strong> — Aspirer la grille, la décrocher si possible, laver sous l'eau tiède, laisser sécher avant de remettre en place.</li>
+          <li><strong>VMC double flux</strong> — Si votre logement en est équipé, les filtres sont à remplacer tous les 6 à 12 mois. Demandez à votre propriétaire leur emplacement.</li>
+        </ul>
+        <div class="callout callout-warning">⚠️ <strong>Erreur très fréquente :</strong> Boucher les grilles de VMC "pour éviter les courants d'air" est l'une des premières causes de moisissures dans les logements. Ces dégradations sont systématiquement mises à la charge du locataire.</div>
+
+        <h2>🔥 La chaudière à gaz individuelle — obligation légale</h2>
+        <p>Si votre logement dispose d'une chaudière à gaz individuelle (chauffage et/ou eau chaude), son entretien est une <strong>obligation légale du locataire</strong> depuis le décret du 20 juillet 2023.</p>
+        <div class="example-box">
+          <div class="example-box-title">⚖️ Ce que dit la loi</div>
+          <p>Tout locataire équipé d'une chaudière entre 4 et 400 kW doit la faire réviser <strong>chaque année civile</strong> par un technicien certifié. L'attestation d'entretien doit être conservée 2 ans et présentée au propriétaire sur demande.</p>
+        </div>
+        <ul>
+          <li><strong>Quand intervenir ?</strong> — Idéalement en septembre-octobre, avant l'hiver. Les techniciens sont complets en décembre-janvier.</li>
+          <li><strong>Coût moyen</strong> — Entre 100 et 150 € par an. Certaines assurances habitation incluent un contrat d'entretien.</li>
+          <li><strong>Conséquences si oubli</strong> — En cas d'accident, votre assurance peut refuser d'indemniser. À votre départ, l'absence d'attestation permet au propriétaire de retenir sur votre caution.</li>
+          <li><strong>Le ramonage</strong> — Le conduit d'évacuation doit être ramoné 1 à 2 fois par an selon les réglements locaux. Vérifiez avec votre propriétaire.</li>
+        </ul>
+        <div class="example-box">
+          <div class="example-box-title">🚨 Signaux d'alerte chaudière</div>
+          <p><strong>Flamme jaune ou orange</strong> au lieu de bleue → Risque de monoxyde de carbone. Appeler un technicien immédiatement et aérer.</p>
+          <p><strong>Odeur de gaz</strong> → Couper le gaz (robinet derrière la chaudière), ouvrir les fenêtres, quitter les lieux, appeler le <strong>0800 011 316</strong> (GRDF, gratuit 24h/24). Ne pas allumer ni éteindre aucun appareil électrique.</p>
+          <p><strong>Chaudière qui s'arrête souvent</strong> → Anomalie à signaler par écrit au propriétaire.</p>
+        </div>
+
+        <h2>🌡️ Les radiateurs — purge annuelle</h2>
+        <p>Dans les logements avec chauffage central à eau chaude, les radiateurs accumulent de l'air. Cet air crée des poches qui empêchent la bonne circulation et réduisent l'efficacité du chauffage.</p>
+        <ul>
+          <li><strong>Symptômes d'un radiateur à purger</strong> — Froid en haut et chaud en bas, bruits de gargouillis ou claquements.</li>
+          <li><strong>Quand purger ?</strong> — Chaque automne, avant de relancer le chauffage pour la saison.</li>
+          <li><strong>Comment purger</strong> — Localiser la vis de purge (en haut du radiateur, côté opposé au robinet). Placer un chiffon et un récipient. Dévisser légèrement avec une clé de purge jusqu'à ce que l'air siffle, puis de l'eau coule. Refermer dès que l'eau coule sans bulles.</li>
+          <li><strong>Après la purge</strong> — Vérifier la pression sur le manomètre de la chaudière (entre 1 et 1,5 bar). Si trop basse, faire l'appoint d'eau via le robinet de remplissage.</li>
+        </ul>
+
+        <h2>💧 Le calcaire — ennemi silencieux des équipements</h2>
+        <p>De nombreuses régions françaises (Île-de-France, Grand Est, PACA…) ont une eau très calcaire. Le calcaire s'accumule progressivement et endommage les équipements si on ne l'entretient pas régulièrement.</p>
+        <div class="example-box">
+          <div class="example-box-title">🧴 Méthodes naturelles anti-calcaire</div>
+          <table class="responsibility-table">
+            <thead><tr><th>Équipement</th><th>Solution</th><th>Fréquence</th></tr></thead>
+            <tbody>
+              <tr><td>Pommeau de douche</td><td>Sac plastique rempli de vinaigre blanc autour du pommeau, une nuit</td><td>Tous les 3 mois</td></tr>
+              <tr><td>Aérateur de robinet</td><td>Dévisser, tremper dans le vinaigre chaud, rincer</td><td>Tous les 6 mois</td></tr>
+              <tr><td>Bouilloire / cafetière</td><td>Acide citrique ou vinaigre dilué, cycle à vide</td><td>Tous les 2 mois</td></tr>
+              <tr><td>Machine à laver</td><td>Programme 60°C à vide + 150g d'acide citrique</td><td>Tous les 3 mois</td></tr>
+              <tr><td>Lave-vaisselle</td><td>Programme à vide + vinaigre blanc dans le bac</td><td>Tous les 3 mois</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>⚡ Le tableau électrique — savoir réagir</h2>
+        <ul>
+          <li><strong>Localisez-le dès votre arrivée</strong> — Entrée, couloir ou placard. Repérez le disjoncteur général et les disjoncteurs de circuit.</li>
+          <li><strong>Un disjoncteur saute</strong> — Débranchez l'appareil responsable (surcharge probable), puis réenclenchez le disjoncteur de bas en haut. S'il resaute sans raison apparente : signalez au propriétaire.</li>
+          <li><strong>Disjoncteur différentiel (module carré)</strong> — S'il saute, testez chaque circuit pour trouver l'appareil défaillant (souvent un appareil dont la résistance est grillée).</li>
+          <li><strong>Odeur de brûlé ou étincelles</strong> — Urgence absolue : coupez le disjoncteur général, n'utilisez aucun équipement, appelez le 18 (pompiers) si nécessaire.</li>
+          <li><strong>Ne jamais bricoler les câblages</strong> — Vous pouvez remplacer une prise ou un interrupteur cassé, mais jamais toucher aux câbles et gaines.</li>
+        </ul>
+      `,
+      quiz: [
+        {
+          question: "Pourquoi ne faut-il JAMAIS couper ni débrancher la VMC ?",
+          options: [
+            "Car c'est interdit par le règlement de copropriété",
+            "Car cela provoque une accumulation d'humidité et l'apparition de moisissures dont le locataire est responsable",
+            "Car cela entraîne une surconsommation d'énergie au redémarrage",
+            "Car le propriétaire en est automatiquement averti"
+          ],
+          correct: 1,
+          explanation: "La VMC évacue l'humidité en permanence. La couper ou l'obstruer crée une accumulation d'humidité qui génère des moisissures. Ces dégradations sont systématiquement mises à la charge du locataire."
+        },
+        {
+          question: "À quelle fréquence doit-on faire réviser la chaudière à gaz individuelle ?",
+          options: [
+            "Tous les 3 ans",
+            "Tous les 2 ans",
+            "Chaque année civile",
+            "Seulement en cas de panne"
+          ],
+          correct: 2,
+          explanation: "Depuis le décret du 20 juillet 2023, l'entretien annuel de la chaudière est une obligation légale du locataire. L'attestation doit être conservée 2 ans et peut être exigée par le propriétaire."
+        },
+        {
+          question: "Comment savoir qu'un radiateur a besoin d'être purgé ?",
+          options: [
+            "Il est très bruyant uniquement la nuit",
+            "Il est froid en haut et chaud en bas, ou fait des gargouillis",
+            "Il consomme trop d'électricité",
+            "La fenêtre de la pièce est condensée"
+          ],
+          correct: 1,
+          explanation: "Un radiateur froid en haut contient de l'air qui empêche l'eau chaude de remplir tout le radiateur. Les gargouillis confirment ce diagnostic. La purge résout le problème."
+        },
+        {
+          question: "Quel est le meilleur moyen naturel de détartrer un pommeau de douche encrassé ?",
+          options: [
+            "Eau de javel diluée pendant 30 minutes",
+            "Sac plastique rempli de vinaigre blanc autour du pommeau, laissé une nuit",
+            "Eau bouillante versée directement",
+            "Bicarbonate de soude sec appliqué sur le pommeau"
+          ],
+          correct: 1,
+          explanation: "Le vinaigre blanc (acide acétique) dissout le calcaire efficacement et sans abîmer les joints. Laisser tremper une nuit garantit un détartrage en profondeur."
+        },
+        {
+          question: "Que faire EN PREMIER en cas d'odeur de gaz dans votre logement ?",
+          options: [
+            "Allumer la lumière pour mieux voir d'où ça vient",
+            "Appeler le propriétaire par téléphone depuis la pièce concernée",
+            "Couper le gaz, ouvrir toutes les fenêtres, quitter le logement et appeler le 0800 011 316",
+            "Utiliser un ventilateur électrique pour disperser le gaz"
+          ],
+          correct: 2,
+          explanation: "En cas d'odeur de gaz, il ne faut ni allumer ni éteindre aucun appareil électrique (risque d'étincelle). Il faut couper le gaz, aérer, quitter les lieux et appeler GRDF (0800 011 316, gratuit)."
+        },
+        {
+          question: "Quelle pression doit indiquer le manomètre de la chaudière après une purge de radiateurs ?",
+          options: [
+            "Entre 0 et 0,5 bar",
+            "Entre 1 et 1,5 bar",
+            "Entre 2 et 3 bar",
+            "Entre 3 et 4 bar"
+          ],
+          correct: 1,
+          explanation: "La pression normale du circuit de chauffage est entre 1 et 1,5 bar. Après une purge, elle peut baisser. Il faut faire l'appoint d'eau via le robinet de remplissage de la chaudière si elle passe en dessous de 1 bar."
+        }
+      ]
+    }
   ],
 
   // ─────────────────────────────────────────────────────────
   // BADGES
   // ─────────────────────────────────────────────────────────
   badges: [
-    { id: "debutant", name: "Débutant", emoji: "🌱", desc: "Premier chapitre terminé !" },
-    { id: "responsable", name: "Responsable", emoji: "⭐", desc: "Obligations maîtrisées" },
-    { id: "hygiene", name: "Expert Hygiène", emoji: "🌿", desc: "Hygiène et prévention validées" },
-    { id: "menage", name: "Pro du Ménage", emoji: "✨", desc: "Méthode ménage complète" },
-    { id: "gestionnaire", name: "Gestionnaire", emoji: "🔨", desc: "Gestion des problèmes validée" },
-    { id: "certifie", name: "Certifié", emoji: "🏆", desc: "Formation complète terminée !" }
+    { id: "initie",      name: "Initié",          emoji: "🗝️", desc: "Les bases du logement maîtrisées !" },
+    { id: "debutant",    name: "Débutant",         emoji: "🌱", desc: "Rôle du locataire compris !" },
+    { id: "responsable", name: "Responsable",      emoji: "⭐", desc: "Obligations d'entretien maîtrisées" },
+    { id: "hygiene",     name: "Expert Hygiène",   emoji: "🌿", desc: "Hygiène et prévention validées" },
+    { id: "menage",      name: "Pro du Ménage",    emoji: "✨", desc: "Méthode ménage complète" },
+    { id: "gestionnaire",name: "Gestionnaire",     emoji: "🔨", desc: "Gestion des problèmes validée" },
+    { id: "technicien",  name: "Technicien",       emoji: "⚙️", desc: "Équipements techniques maîtrisés" },
+    { id: "certifie",    name: "Certifié",         emoji: "🏆", desc: "Formation complète terminée !" }
   ],
 
   // ─────────────────────────────────────────────────────────
@@ -1013,6 +1404,39 @@ const COURSE_DATA = {
         { icon: "fa-house", text: "PROPRIÉTAIRE : Chaudière en panne, toiture, façade, canalisations encastrées" },
         { icon: "fa-house", text: "PROPRIÉTAIRE : Équipements vétustes, problèmes structurels, double vitrage cassé" },
         { icon: "fa-scale-balanced", text: "EN CAS DE DOUTE : Signaler par écrit et demander confirmation au propriétaire" }
+      ]
+    },
+    {
+      id: "surfaces",
+      title: "Guide produits × surfaces",
+      icon: "🧹",
+      color: "#F59E0B",
+      bgColor: "#FFFBEB",
+      desc: "Quoi utiliser sur quoi — et les erreurs à éviter",
+      items: [
+        { icon: "fa-tree", text: "Parquet flottant/stratifié → produit parquet spécifique, chiffon à peine humide. JAMAIS eau stagnante, vapeur ou ammoniaque" },
+        { icon: "fa-border-all", text: "Carrelage céramique brillant → eau + savon noir dilué. Éviter la javel directe (dégrade les joints)" },
+        { icon: "fa-border-all", text: "Carrelage grès cérame mat → détergent neutre dilué. JAMAIS vinaigre ou produits acides (attaque la surface)" },
+        { icon: "fa-paint-roller", text: "Peinture murale lessivable → eau tiède + liquide vaisselle, tamponner sans frotter. Éviter brosse dure" },
+        { icon: "fa-scroll", text: "Papier peint → chiffon à peine humide, tamponner uniquement. JAMAIS eau, vapeur ou spray nettoyant" },
+        { icon: "fa-faucet", text: "Joints silicone douche → bicarbonate + vinaigre ou anti-moisissures spécifique. Javel répétée attaque le silicone" },
+        { icon: "fa-sink", text: "Inox (évier, robinetterie) → produit inox ou crème de tartre. JAMAIS paille de fer (raye) ni javel (noircit)" },
+        { icon: "fa-window-maximize", text: "Vitres et miroirs → produit vitres ou vinaigre blanc dilué. Ne pas nettoyer en plein soleil (traces garanties)" }
+      ]
+    },
+    {
+      id: "calendrier",
+      title: "Calendrier annuel d'entretien",
+      icon: "📆",
+      color: "#7C3AED",
+      bgColor: "#EDE9FE",
+      desc: "Ce qu'il faut faire chaque saison",
+      items: [
+        { icon: "fa-leaf", text: "AUTOMNE (sept-oct) : Révision chaudière ✦ Purge des radiateurs ✦ Vérification joints de fenêtres ✦ Nettoyage bouches VMC" },
+        { icon: "fa-snowflake", text: "HIVER (nov-mars) : Aérer 10 min/jour même par grand froid ✦ Maintenir 16-18°C partout ✦ Éviter de sécher le linge sans ventiler" },
+        { icon: "fa-seedling", text: "PRINTEMPS (avr-mai) : Grand ménage ✦ Vérification moisissures ✦ Première tonte de jardin ✦ Nettoyage filtres clim si équipé" },
+        { icon: "fa-sun", text: "ÉTÉ (juin-août) : Fermer volets en journée ✦ Ouvrir fenêtres la nuit ✦ Nettoyer filtres VMC ✦ Traitement préventif anti-nuisibles" },
+        { icon: "fa-calendar-check", text: "MENSUEL toute l'année : Nettoyer filtres hotte ✦ Détartrer pommeau de douche ✦ Vérifier joints salle de bain" }
       ]
     },
     {
