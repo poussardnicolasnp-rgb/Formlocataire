@@ -18,76 +18,152 @@ const COURSE_DATA = {
       duration: "12 min",
       points: 50,
       badgeId: "initie",
-      audioScript: "Bienvenue dans cette formation. Avant d'entrer dans le cœur du sujet, prenons le temps de comprendre les bases : les termes clés du logement en France, les documents à conserver précieusement, et les gestes indispensables à faire dès le premier jour dans votre logement.",
+      audioScript: "Bienvenue dans cette formation certifiante. Ce premier module vous donne toutes les clés pour aborder votre location en France avec confiance : les termes juridiques essentiels, les équipements à connaître, les documents à conserver et la procédure complète pour réussir votre état des lieux d'entrée dès le premier jour.",
       content: `
-        <h2>Bienvenue dans votre formation</h2>
-        <p>Cette formation vous accompagne pas à pas pour devenir un locataire confiant et bien informé. Avant d'entrer dans le vif du sujet, commençons par les fondamentaux : les termes à connaître, les documents indispensables, et les gestes à faire dès le premier jour.</p>
-        <div class="callout">🎯 <strong>Ce que vous allez apprendre ici :</strong> Les termes clés du logement en France, les équipements à identifier, les documents à conserver — et comment réussir votre état des lieux d'entrée dès le premier jour.</div>
+        <h2>Objectifs pédagogiques de ce module</h2>
+        <p>À l'issue de ce module, vous serez capable de :</p>
+        <ol>
+          <li>Définir les termes juridiques et techniques fondamentaux de la location en France ;</li>
+          <li>Identifier les équipements essentiels d'un logement et connaître leur rôle ;</li>
+          <li>Citer les quatre documents à conserver pendant toute la durée de la location ;</li>
+          <li>Réaliser un état des lieux d'entrée complet et opposable ;</li>
+          <li>Accomplir les démarches administratives obligatoires dès l'emménagement.</li>
+        </ol>
 
-        <h2>📖 Glossaire — Les termes essentiels</h2>
-        <p>Le vocabulaire de la location peut sembler complexe au premier abord. Voici les termes que vous rencontrerez le plus souvent :</p>
+        <h2>Partie 1 — Le vocabulaire de la location</h2>
+        <p>La location d'un logement s'accompagne d'un vocabulaire juridique et technique précis. Maîtriser ces termes est indispensable pour comprendre vos droits, vos obligations et les documents que vous signerez.</p>
+
+        <h3>1.1 — Les termes juridiques fondamentaux</h3>
+
         <div class="example-box">
-          <div class="example-box-title">📋 Termes fondamentaux</div>
+          <div class="example-box-title">📖 Glossaire officiel</div>
           <table class="responsibility-table">
-            <thead><tr><th>Terme</th><th>Définition simple</th></tr></thead>
+            <thead><tr><th>Terme</th><th>Définition complète</th></tr></thead>
             <tbody>
-              <tr><td><strong>Bail</strong></td><td>Le contrat signé entre vous et le propriétaire. Il fixe la durée, le loyer et les règles de la location.</td></tr>
-              <tr><td><strong>Dépôt de garantie</strong></td><td>Somme versée à l'entrée (1 mois de loyer hors charges). Restituée à la sortie si le logement est en bon état.</td></tr>
-              <tr><td><strong>Charges locatives</strong></td><td>Dépenses collectives récupérées par le propriétaire : eau, parties communes, gardien, ascenseur…</td></tr>
-              <tr><td><strong>État des lieux</strong></td><td>Document décrivant l'état précis du logement à l'entrée et à la sortie. C'est votre protection principale.</td></tr>
-              <tr><td><strong>VMC</strong></td><td>Ventilation Mécanique Contrôlée — système qui renouvelle l'air en permanence. Présent dans presque tous les logements construits après 1970.</td></tr>
-              <tr><td><strong>DPE</strong></td><td>Diagnostic de Performance Énergétique — note de A à G indiquant la consommation d'énergie du logement.</td></tr>
-              <tr><td><strong>Préavis</strong></td><td>Délai à respecter pour prévenir le propriétaire de votre départ (1 mois en zone tendue, 3 mois ailleurs).</td></tr>
-              <tr><td><strong>LRAR</strong></td><td>Lettre Recommandée Avec Accusé de Réception — mode d'envoi requis pour les communications importantes.</td></tr>
-              <tr><td><strong>Quittance de loyer</strong></td><td>Reçu mensuel attestant le paiement de votre loyer. Conservez-les toutes.</td></tr>
-              <tr><td><strong>Réparations locatives</strong></td><td>Réparations d'entretien courant à votre charge, listées par le décret du 26 août 1987.</td></tr>
-              <tr><td><strong>Grille de vétusté</strong></td><td>Tableau définissant la durée de vie théorique des équipements. Permet de calculer la part restant à votre charge en cas de dégradation.</td></tr>
+              <tr>
+                <td><strong>Le bail</strong></td>
+                <td>Contrat écrit et signé entre le locataire et le propriétaire (ou son mandataire). Il précise la durée de la location, le montant du loyer, les charges, et les obligations de chaque partie. Sa durée légale est de 3 ans pour un logement vide et 1 an pour un logement meublé.</td>
+              </tr>
+              <tr>
+                <td><strong>Le dépôt de garantie</strong></td>
+                <td>Somme versée à l'entrée dans les lieux, équivalente à 1 mois de loyer hors charges pour un logement vide (2 mois pour un meublé). Elle est restituée à la sortie si le logement est rendu en bon état, déduction faite des éventuelles dégradations dûment justifiées. On l'appelle aussi « caution », bien que ce terme désigne techniquement la personne qui se porte garante.</td>
+              </tr>
+              <tr>
+                <td><strong>Les charges locatives</strong></td>
+                <td>Dépenses liées aux parties communes et aux services collectifs que le propriétaire avance et récupère auprès du locataire : entretien des espaces communs, électricité des parties communes, eau froide et chaude collective, gardien, ascenseur, taxe d'enlèvement des ordures ménagères.</td>
+              </tr>
+              <tr>
+                <td><strong>L'état des lieux</strong></td>
+                <td>Document contradictoire (établi en présence des deux parties) décrivant l'état précis du logement, pièce par pièce, à l'entrée et à la sortie. C'est la pièce maîtresse de la location : elle détermine ce qui peut ou non être retenu sur le dépôt de garantie à la sortie.</td>
+              </tr>
+              <tr>
+                <td><strong>La VMC</strong></td>
+                <td>Ventilation Mécanique Contrôlée. Système technique présent dans presque tous les logements français construits après 1970. Il renouvelle l'air intérieur en permanence, 24 heures sur 24, en extrayant l'air vicié (humidité, odeurs, vapeurs) par des bouches situées en cuisine, salle de bain et WC.</td>
+              </tr>
+              <tr>
+                <td><strong>Le DPE</strong></td>
+                <td>Diagnostic de Performance Énergétique. Document obligatoire remis avec chaque annonce de location, qui note le logement de A (très économe) à G (très énergivore). Depuis 2025, les logements classés G sont progressivement interdits à la location.</td>
+              </tr>
+              <tr>
+                <td><strong>Le préavis</strong></td>
+                <td>Délai légal que le locataire doit respecter pour informer le propriétaire de son départ. Il est de <strong>3 mois</strong> pour un logement vide, réduit à <strong>1 mois</strong> en zone tendue, en cas de mutation professionnelle, de perte d'emploi ou pour raison de santé.</td>
+              </tr>
+              <tr>
+                <td><strong>La LRAR</strong></td>
+                <td>Lettre Recommandée Avec Accusé de Réception. Mode d'envoi postal qui constitue une preuve légale de l'envoi et de la réception d'un courrier. Obligatoire pour tout acte juridique important : donner son préavis, signaler un problème grave, contester une retenue sur caution.</td>
+              </tr>
+              <tr>
+                <td><strong>La quittance de loyer</strong></td>
+                <td>Document que le propriétaire doit remettre au locataire chaque mois, attestant du paiement du loyer et des charges. Elle constitue une preuve de paiement reconnue juridiquement. Conservez toutes vos quittances pendant au moins 3 ans après la fin du bail.</td>
+              </tr>
+              <tr>
+                <td><strong>Les réparations locatives</strong></td>
+                <td>Ensemble des travaux d'entretien courant et des petites réparations dont la charge incombe légalement au locataire, tels que définis par le décret du 26 août 1987. Exemples : remplacement des joints de robinets, des ampoules, nettoyage des grilles de VMC.</td>
+              </tr>
+              <tr>
+                <td><strong>La grille de vétusté</strong></td>
+                <td>Tableau conventionnel définissant la durée de vie théorique de chaque élément du logement (peintures, revêtements, équipements). Elle permet de calculer la part de responsabilité du locataire en cas de dégradation, en tenant compte de l'usure naturelle liée au temps. Plus un élément est ancien, plus la part du locataire diminue.</td>
+              </tr>
             </tbody>
           </table>
         </div>
 
-        <h2>🔧 Les équipements typiques d'un logement français</h2>
-        <p>Un logement en France est équipé d'installations que vous devez savoir identifier et entretenir dès votre arrivée :</p>
-        <ul>
-          <li><strong>La VMC</strong> — Des grilles situées en cuisine, salle de bain et WC. Elle fonctionne 24h/24 et ne doit JAMAIS être coupée ni obstruée. C'est elle qui prévient les moisissures. Un chapitre complet lui est consacré plus loin.</li>
-          <li><strong>La chaudière individuelle</strong> — Présente dans de nombreux logements pour le chauffage et l'eau chaude. Son entretien annuel par un professionnel est une <strong>obligation légale</strong> du locataire.</li>
-          <li><strong>Les radiateurs à eau</strong> — Alimentés par la chaudière, ils nécessitent une purge annuelle pour fonctionner correctement.</li>
-          <li><strong>Le tableau électrique (disjoncteur)</strong> — Situé dans l'entrée ou un placard. Il coupe le courant en cas de surcharge. <strong>Localisez-le dès votre arrivée.</strong></li>
-          <li><strong>Le robinet d'arrêt d'eau</strong> — Généralement sous l'évier. Il coupe l'arrivée d'eau. <strong>C'est votre premier réflexe en cas de fuite.</strong></li>
-          <li><strong>Le compteur Linky</strong> — Relève automatiquement votre consommation d'électricité. Notez son index à l'arrivée et au départ.</li>
-        </ul>
+        <h2>Partie 2 — Les équipements d'un logement français</h2>
+        <p>Un logement en France est équipé d'installations techniques spécifiques. Les connaître, savoir les localiser et comprendre leur fonctionnement fait partie de vos responsabilités de locataire.</p>
 
-        <h2>📁 Les 4 documents à conserver précieusement</h2>
-        <ul>
-          <li><strong>Le bail signé</strong> — Votre contrat de référence pour toute la durée de la location.</li>
-          <li><strong>L'état des lieux d'entrée signé</strong> — Votre protection contre toute retenue injustifiée à la sortie. Ne le perdez jamais.</li>
-          <li><strong>L'attestation d'assurance habitation</strong> — Obligatoire dès le premier jour. À présenter au propriétaire sur demande chaque année.</li>
-          <li><strong>Les quittances de loyer</strong> — Preuve du paiement de chaque loyer. Utiles pour vos futures demandes de logement.</li>
-        </ul>
-        <div class="callout callout-warning">⚠️ <strong>L'assurance habitation est obligatoire</strong> dès la remise des clés, sous peine de résiliation du bail. Souscrivez-la <em>avant</em> d'entrer dans le logement.</div>
+        <h3>2.1 — Les six équipements à identifier dès votre arrivée</h3>
 
-        <h2>🔍 L'état des lieux d'entrée — votre bouclier</h2>
-        <p>C'est le document le plus important de toute votre location. Il décrit l'état exact du logement au moment où vous prenez possession des clés. C'est sur cette base que tout sera comparé à votre départ.</p>
         <div class="example-box">
-          <div class="example-box-title">✅ Ce qu'il faut faire le jour de la remise des clés</div>
-          <p><strong>1.</strong> Inspectez chaque pièce minutieusement — murs, plafonds, sols, fenêtres, équipements</p>
-          <p><strong>2.</strong> Testez tout — chaque interrupteur, prise, robinet, fenêtre et appareil électroménager</p>
-          <p><strong>3.</strong> Notez TOUS les défauts, même minimes (rayures, taches, poignées bancales, joints abîmés…)</p>
-          <p><strong>4.</strong> Prenez des <strong>photos datées</strong> de chaque pièce et de chaque défaut signalé</p>
-          <p><strong>5.</strong> Relevez les index des compteurs (eau, gaz, électricité) et inscrivez-les sur le document</p>
-          <p><strong>6.</strong> Signez seulement quand vous avez tout vérifié et noté</p>
-        </div>
-        <div class="callout callout-success">💡 <strong>Le droit des 10 jours :</strong> Même après signature, vous avez <strong>10 jours</strong> pour envoyer par LRAR tout défaut constaté après coup — par exemple un problème de chauffage visible seulement à la première mise en chauffe.</div>
-        <div class="callout callout-warning">⚠️ <strong>Sans état des lieux d'entrée,</strong> le logement est présumé vous avoir été remis en parfait état. Vous devrez le rendre dans le même état à la sortie. Insistez toujours pour en établir un.</div>
+          <div class="example-box-title">🔧 Les équipements essentiels</div>
+          <p><strong>1. La VMC (Ventilation Mécanique Contrôlée)</strong><br>
+          Des grilles sont visibles en cuisine, salle de bain et WC. La VMC fonctionne 24 heures sur 24, 7 jours sur 7. Elle ne doit jamais être coupée ni obstruée. C'est elle qui évite l'accumulation d'humidité et prévient les moisissures. Un chapitre complet lui est consacré dans cette formation.</p>
 
-        <h2>📅 Vos premières démarches administratives</h2>
+          <p><strong>2. La chaudière individuelle</strong><br>
+          Présente dans de nombreux logements, elle produit la chaleur pour le chauffage et l'eau chaude sanitaire. Son entretien annuel par un technicien certifié est une <strong>obligation légale du locataire</strong>. Elle est généralement installée dans la cuisine ou dans un local technique dédié.</p>
+
+          <p><strong>3. Les radiateurs à eau chaude</strong><br>
+          Alimentés par la chaudière, ils chauffent les pièces en faisant circuler de l'eau chaude. Ils nécessitent une purge annuelle (élimination de l'air accumulé dans le circuit) pour fonctionner correctement.</p>
+
+          <p><strong>4. Le tableau électrique (disjoncteur général)</strong><br>
+          Situé dans l'entrée ou dans un placard, il distribue le courant électrique dans le logement et coupe automatiquement le circuit en cas de surcharge ou de court-circuit. <em>Localisez-le dès votre arrivée</em> : c'est votre premier réflexe en cas de panne électrique.</p>
+
+          <p><strong>5. Le robinet d'arrêt d'eau général</strong><br>
+          Généralement situé sous l'évier de la cuisine ou dans un placard technique, il permet de couper immédiatement toute l'alimentation en eau du logement. <em>Localisez-le dès votre arrivée</em> : c'est votre premier geste en cas de fuite d'eau.</p>
+
+          <p><strong>6. Le compteur électrique (Linky)</strong><br>
+          Le compteur Linky relève automatiquement votre consommation d'électricité et la transmet au fournisseur. Notez impérativement son index (chiffre affiché) le jour de votre arrivée et le jour de votre départ : ces relevés sont inscrits dans l'état des lieux.</p>
+        </div>
+
+        <h2>Partie 3 — Les documents à conserver</h2>
+        <p>Quatre documents constituent le socle de votre protection juridique pendant toute la durée de la location. La perte de l'un d'entre eux peut vous exposer à des litiges difficiles à résoudre.</p>
+
+        <h3>3.1 — Les quatre documents indispensables</h3>
+        <ol>
+          <li><strong>Le bail signé</strong> — Il définit toutes les règles de votre location. En cas de litige, c'est la référence première. Conservez-le jusqu'à 3 ans après la fin du contrat.</li>
+          <li><strong>L'état des lieux d'entrée signé</strong> — C'est votre bouclier contre toute retenue injustifiée à la sortie. Tout défaut non mentionné à l'entrée peut vous être imputé au départ. Ne le perdez jamais.</li>
+          <li><strong>L'attestation d'assurance habitation</strong> — Elle prouve que vous êtes couvert contre les sinistres (incendie, dégât des eaux, vol). Le propriétaire peut la demander chaque année. Son absence peut justifier la résiliation du bail.</li>
+          <li><strong>Les quittances de loyer</strong> — Elles prouvent que vous avez payé chaque mois. Elles sont utiles lors de futures demandes de logement et en cas de litige sur les paiements.</li>
+        </ol>
+
+        <div class="callout callout-warning">⚠️ <strong>Règle absolue — L'assurance habitation :</strong> La souscription d'une assurance habitation est <strong>obligatoire dès la remise des clés</strong>, en vertu de la loi du 6 juillet 1989. Le défaut d'assurance constitue un motif légal de résiliation du bail. Vous devez donc souscrire votre assurance <em>avant</em> d'entrer dans le logement, et être en mesure d'en produire l'attestation à tout moment.</div>
+
+        <h2>Partie 4 — L'état des lieux d'entrée</h2>
+        <p>L'état des lieux d'entrée est le document le plus stratégique de votre location. Il photographie l'état exact du logement au moment de la remise des clés. C'est sur cette base — et uniquement cette base — que sera évaluée votre responsabilité à la sortie.</p>
+
+        <h3>4.1 — Procédure en six étapes</h3>
+        <div class="example-box">
+          <div class="example-box-title">✅ Procédure complète le jour de la remise des clés</div>
+          <p><strong>Étape 1 — Inspection visuelle systématique</strong><br>
+          Parcourez chaque pièce méthodiquement : murs (taches, traces, trous), plafond (humidité, fissures), sol (rayures, taches, déformations), fenêtres (vitres, joints, poignées, volets).</p>
+          <p><strong>Étape 2 — Test de tous les équipements</strong><br>
+          Actionnez chaque interrupteur, chaque prise, chaque robinet, chaque fenêtre. Testez tous les appareils fournis (four, hotte, réfrigérateur). Vérifiez la chasse d'eau, l'interphone, la sonnette, la boîte aux lettres.</p>
+          <p><strong>Étape 3 — Notation de tous les défauts</strong><br>
+          Inscrivez sur le document chaque imperfection constatée, même minime : une légère rayure sur le parquet, une plinthe décollée, un joint de robinet qui suinte. Aucun défaut n'est trop petit pour être noté.</p>
+          <p><strong>Étape 4 — Photos datées systématiques</strong><br>
+          Photographiez chaque pièce dans son ensemble, puis chaque défaut en gros plan. Activez la date et l'heure sur votre appareil photo ou smartphone. Conservez ces photos dans plusieurs endroits (cloud, email à vous-même).</p>
+          <p><strong>Étape 5 — Relevé des compteurs</strong><br>
+          Notez les index de tous les compteurs présents dans le logement : électricité, eau froide, eau chaude, gaz. Ces relevés doivent figurer sur le document d'état des lieux.</p>
+          <p><strong>Étape 6 — Signature en connaissance de cause</strong><br>
+          Ne signez qu'après avoir tout vérifié et tout noté. Une fois signé, le document fait foi. Vous repartez avec un exemplaire original signé par les deux parties.</p>
+        </div>
+
+        <div class="callout callout-success">💡 <strong>Le droit des 10 jours :</strong> Même après avoir signé l'état des lieux d'entrée, la loi vous accorde un délai supplémentaire de <strong>10 jours</strong> pour signaler par LRAR tout défaut constaté ultérieurement. Ce droit est particulièrement utile pour les problèmes de chauffage, uniquement visibles lors de la première mise en chauffe hivernale.</div>
+
+        <div class="callout callout-warning">⚠️ <strong>Absence d'état des lieux d'entrée :</strong> Si aucun état des lieux d'entrée n'est établi, la loi présume que le logement vous a été remis en parfait état. Vous devrez donc le rendre dans un état identique à la sortie, sans pouvoir invoquer des défauts préexistants. Insistez toujours, sans exception, pour qu'un état des lieux d'entrée soit réalisé et signé.</div>
+
+        <h2>Partie 5 — Les démarches administratives obligatoires</h2>
+        <p>L'emménagement s'accompagne de démarches administratives que vous devez accomplir rapidement pour être en règle et ne pas perdre vos droits.</p>
+
+        <h3>5.1 — Les démarches prioritaires</h3>
         <ul>
-          <li><strong>Ouvrir vos contrats d'énergie</strong> (électricité, gaz) à votre nom dès la prise de possession</li>
-          <li><strong>Souscrire l'assurance habitation</strong> avant même d'entrer dans le logement</li>
-          <li><strong>Déclarer votre nouvelle adresse</strong> — impôts, CAF, Sécurité sociale, banque, employeur</li>
-          <li><strong>Déclarer votre situation à la CAF dans les 30 jours</strong> si vous bénéficiez d'aides au logement (APL/ALS) — tout retard crée un trop-perçu à rembourser</li>
-          <li><strong>Faire suivre votre courrier</strong> via La Poste pour ne rien manquer pendant la transition</li>
+          <li><strong>Ouverture des contrats d'énergie</strong> — Souscrivez vos contrats d'électricité (et de gaz si nécessaire) à votre nom dès la remise des clés, en communiquant les index relevés lors de l'état des lieux.</li>
+          <li><strong>Souscription de l'assurance habitation</strong> — À effectuer <em>avant</em> d'entrer dans le logement. Sans assurance, vous êtes exposé en cas de sinistre et votre bail peut être résilié.</li>
+          <li><strong>Déclaration de la nouvelle adresse</strong> — Informez dans les meilleurs délais : l'administration fiscale, la CAF, la Sécurité sociale, votre banque et votre employeur.</li>
+          <li><strong>Déclaration à la CAF dans les 30 jours</strong> — Si vous bénéficiez d'aides au logement (APL ou ALS), tout changement de situation doit être déclaré à la CAF dans un délai de <strong>30 jours</strong>. Tout retard entraîne la création d'un trop-perçu que vous devrez intégralement rembourser.</li>
+          <li><strong>Réexpédition du courrier</strong> — La Poste propose un service de réexpédition temporaire (payant) pour ne manquer aucun courrier important durant la période de transition.</li>
         </ul>
+
+        <div class="callout callout-success">✅ <strong>Résumé du module :</strong> Vous connaissez désormais les termes clés, les équipements à repérer, les documents à conserver et la procédure complète pour réussir votre état des lieux d'entrée. Ces bases constituent le socle de toute location réussie.</div>
       `,
       quiz: [
         {
@@ -160,84 +236,130 @@ const COURSE_DATA = {
       duration: "15 min",
       points: 50,
       badgeId: "debutant",
-      audioScript: "Lorsque vous signez un bail et que vous entrez dans un logement, vous devenez bien plus qu'un simple occupant : vous en devenez le gardien au quotidien. Cette formation vous donnera toutes les clés pour être un locataire exemplaire, protéger votre caution, et vivre dans un environnement sain et agréable.",
+      audioScript: "Lorsque vous signez un bail, vous devenez le gardien quotidien du logement qui vous est confié. Ce chapitre vous explique le cadre légal de vos responsabilités, les quatre piliers du bon locataire, la liste complète des réparations qui vous incombent selon le décret de 1987, et comment fonctionne la grille de vétusté qui vous protège.",
       content: `
-        <h2>Bienvenue dans votre formation</h2>
-        <p>Lorsque vous signez un bail et entrez dans un logement, vous devenez bien plus qu'un simple occupant : vous en devenez le <strong>gardien au quotidien</strong>. Être locataire, c'est accepter une responsabilité — celle de prendre soin d'un espace qui vous est confié.</p>
-        <p>Cette responsabilité n'est pas une contrainte : c'est un engagement qui vous protège autant que votre propriétaire. La loi française, notamment la <strong>loi du 6 juillet 1989</strong> et le <strong>décret du 26 août 1987</strong>, définit précisément ce que doit faire le locataire.</p>
+        <h2>Objectifs pédagogiques de ce chapitre</h2>
+        <p>À l'issue de ce chapitre, vous serez capable de :</p>
+        <ol>
+          <li>Expliquer le principe fondamental de répartition des responsabilités entre locataire et propriétaire ;</li>
+          <li>Citer les quatre piliers du comportement d'un bon locataire ;</li>
+          <li>Identifier les catégories de réparations à votre charge selon le décret du 26 août 1987 ;</li>
+          <li>Appliquer la grille de vétusté pour calculer votre part de responsabilité ;</li>
+          <li>Communiquer correctement avec votre propriétaire en cas de problème.</li>
+        </ol>
 
-        <div class="callout">💡 <strong>Le savoir, c'est se protéger.</strong> Comprendre vos obligations vous permettra d'éviter les conflits, de protéger votre caution et de vivre sereinement.</div>
-
-        <h2>Le principe fondamental</h2>
-        <p>Un principe simple structure toutes les obligations :</p>
+        <h2>Partie 1 — Le cadre légal de la location</h2>
+        <p>La location d'un logement est encadrée par deux textes de référence que tout locataire doit connaître :</p>
         <ul>
-          <li><strong>L'usage courant est à la charge du locataire</strong> — entretien, petites réparations, consommables.</li>
-          <li><strong>La structure et les pannes importantes sont à la charge du propriétaire</strong> — toiture, canalisations encastrées, chaudière, etc.</li>
+          <li><strong>La loi du 6 juillet 1989</strong> — Elle régit l'ensemble des rapports entre locataires et propriétaires pour les logements à usage de résidence principale. Elle définit les droits et obligations de chaque partie.</li>
+          <li><strong>Le décret du 26 août 1987</strong> — Il établit la liste précise des réparations locatives, c'est-à-dire les travaux d'entretien courant et les petites réparations dont la charge incombe légalement au locataire.</li>
         </ul>
+        <div class="callout">💡 <strong>À retenir :</strong> Connaître ces deux textes vous permet de savoir avec certitude ce qui est à votre charge — et ce qui ne l'est pas. Cette connaissance est votre meilleure protection contre les litiges.</div>
+
+        <h2>Partie 2 — Le principe fondamental de répartition</h2>
+        <p>Un principe structurant régit toutes les situations que vous rencontrerez en tant que locataire :</p>
 
         <div class="example-box">
-          <div class="example-box-title">📌 Exemples concrets</div>
+          <div class="example-box-title">⚖️ La règle d'or</div>
+          <p><strong>Règle A — Charge du locataire :</strong> Tout ce qui résulte de l'<em>usage normal et courant</em> du logement est à la charge du locataire. Cela inclut l'entretien régulier, les petites réparations et le remplacement des consommables.</p>
+          <p><strong>Règle B — Charge du propriétaire :</strong> Tout ce qui relève de la <em>structure du bâtiment</em>, d'une <em>panne importante</em> ou de la <em>vétusté normale</em> est à la charge du propriétaire. Cela inclut les gros travaux, les équipements défaillants et les problèmes structurels.</p>
+        </div>
+
+        <h3>2.1 — Tableau de répartition des responsabilités</h3>
+        <div class="example-box">
+          <div class="example-box-title">📋 Exemples concrets — qui paie quoi ?</div>
           <table class="responsibility-table">
-            <thead>
-              <tr><th>✅ Locataire</th><th>🏠 Propriétaire</th></tr>
-            </thead>
+            <thead><tr><th>Situation</th><th>Responsable</th><th>Justification</th></tr></thead>
             <tbody>
-              <tr><td>Joint de robinet qui fuit</td><td>Canalisation qui fuit dans le mur</td></tr>
-              <tr><td>Ampoule grillée</td><td>Tableau électrique défaillant</td></tr>
-              <tr><td>Poignée de porte cassée</td><td>Porte déformée par l'humidité structurelle</td></tr>
-              <tr><td>Entretien annuel chaudière</td><td>Remplacement chaudière vétuste</td></tr>
-              <tr><td>Murs salis par l'usage</td><td>Infiltration d'eau par le toit</td></tr>
+              <tr><td>Joint de robinet qui fuit</td><td>✅ Locataire</td><td>Réparation d'usage courant (décret 1987)</td></tr>
+              <tr><td>Canalisation qui fuit dans le mur</td><td>🏠 Propriétaire</td><td>Réparation structurelle</td></tr>
+              <tr><td>Ampoule grillée</td><td>✅ Locataire</td><td>Consommable à la charge du locataire</td></tr>
+              <tr><td>Tableau électrique défaillant</td><td>🏠 Propriétaire</td><td>Installation électrique principale</td></tr>
+              <tr><td>Poignée de porte cassée (usage)</td><td>✅ Locataire</td><td>Réparation d'usage courant</td></tr>
+              <tr><td>Porte déformée par humidité structurelle</td><td>🏠 Propriétaire</td><td>Problème lié à la structure</td></tr>
+              <tr><td>Entretien annuel de la chaudière</td><td>✅ Locataire</td><td>Obligation légale (décret 2023)</td></tr>
+              <tr><td>Remplacement d'une chaudière vétuste</td><td>🏠 Propriétaire</td><td>Équipement en fin de vie</td></tr>
+              <tr><td>Murs salis par l'usage quotidien</td><td>✅ Locataire</td><td>Entretien courant</td></tr>
+              <tr><td>Infiltration d'eau par le toit</td><td>🏠 Propriétaire</td><td>Défaut de la structure du bâtiment</td></tr>
             </tbody>
           </table>
         </div>
 
-        <h2>Les 4 piliers du bon locataire</h2>
-        <ul>
-          <li><strong>L'entretien régulier</strong> — Nettoyer, aspirer, dégraisser, détartrer. Ces gestes simples préservent le logement dans le temps et évitent les dégradations coûteuses.</li>
-          <li><strong>L'utilisation correcte des équipements</strong> — Ne pas forcer sur les serrures, ne pas surcharger les prises, ne pas laisser l'eau couler inutilement, aérer correctement.</li>
-          <li><strong>Les petites réparations</strong> — Remplacer une ampoule, un joint de robinet, une pile de sonnette, un bouton de meuble. Ces interventions sont simples et à votre charge.</li>
-          <li><strong>La réactivité</strong> — Signaler rapidement tout problème important au propriétaire. Plus vous attendez, plus les dégâts s'aggravent — et plus votre responsabilité peut être engagée.</li>
-        </ul>
+        <h2>Partie 3 — Les quatre piliers du bon locataire</h2>
+        <p>Un locataire exemplaire se distingue par quatre qualités fondamentales. Ces quatre piliers constituent ensemble le comportement attendu par la loi et par tout bailleur sérieux.</p>
 
-        <h2>Ce que dit la loi — le décret du 26 août 1987</h2>
-        <p>Ce décret liste précisément les réparations locatives. Voici les grandes catégories :</p>
-        <ul>
-          <li><strong>🪟 Ouvertures</strong> — Graissage des gonds, remplacement des poignées, serrures et joints d'étanchéité.</li>
-          <li><strong>🚿 Sanitaires</strong> — Détartrage des robinets, remplacement des joints, débouchage des évacuations.</li>
-          <li><strong>⚡ Électricité</strong> — Remplacement des prises, interrupteurs, ampoules, fusibles.</li>
-          <li><strong>🌡️ Chauffage</strong> — Entretien annuel obligatoire de la chaudière, remplacement des piles de thermostat.</li>
-          <li><strong>🏠 Murs, sols, plafonds</strong> — Rebouchage de petits trous, retouches de peinture mineures, raccords de papier peint.</li>
-        </ul>
+        <h3>Pilier 1 — L'entretien régulier</h3>
+        <p>L'entretien régulier consiste à accomplir les gestes quotidiens, hebdomadaires et mensuels qui maintiennent le logement en bon état : nettoyer les sols, aspirer, dégraisser les surfaces de cuisine, détartrer les robinets, aérer chaque jour. Ces gestes simples, effectués avec régularité, préviennent la grande majorité des dégradations coûteuses.</p>
 
-        <div class="callout callout-success">✅ <strong>Bon à savoir :</strong> Si un problème est causé par la <em>vétusté normale</em> (le logement vieillit naturellement), c'est le propriétaire qui paie. La "grille de vétusté" définit la durée de vie des équipements.</div>
+        <h3>Pilier 2 — L'utilisation correcte des équipements</h3>
+        <p>Chaque équipement du logement a été conçu pour un usage spécifique. L'utilisation correcte signifie : ne pas forcer sur les serrures, ne pas surcharger les prises électriques, ne pas verser de corps gras dans les canalisations, utiliser la hotte lors de chaque cuisson, ne pas laisser l'eau couler inutilement. Un mauvais usage qui provoque une dégradation est à la charge du locataire, même si l'équipement est ancien.</p>
 
-        <h2>Votre relation avec le propriétaire</h2>
-        <p>La relation locataire-propriétaire repose sur la <strong>confiance et la communication</strong>. En cas de problème que vous ne pouvez pas résoudre seul :</p>
-        <ul>
-          <li>Signalez-le par <strong>écrit</strong> (email ou courrier recommandé) — cela constitue une preuve.</li>
-          <li>Soyez précis dans la description du problème.</li>
-          <li>Conservez une copie de tous vos échanges.</li>
-          <li>N'attendez pas : un petit problème non signalé peut devenir un gros litige.</li>
-        </ul>
+        <h3>Pilier 3 — Les petites réparations</h3>
+        <p>Le locataire est tenu d'effectuer lui-même les petites réparations d'entretien courant : remplacer une ampoule grillée, changer un joint de robinet usé, remplacer la pile d'une sonnette, reboucher un petit trou de cheville dans un mur. Ces interventions ne nécessitent pas de compétences techniques particulières et sont clairement listées dans le décret du 26 août 1987.</p>
 
-        <div class="callout callout-warning">⚠️ <strong>Attention :</strong> Si vous effectuez des réparations qui étaient à la charge du propriétaire sans son accord, vous ne pourrez généralement pas vous faire rembourser — sauf urgence avérée documentée par écrit.</div>
+        <h3>Pilier 4 — La réactivité</h3>
+        <p>Dès qu'un problème dépasse vos capacités d'intervention ou relève de la responsabilité du propriétaire, vous devez le signaler sans délai, par écrit. Attendre aggrave systématiquement les dégâts : une petite fuite devient une inondation, une moisissure localisée envahit un mur entier. La réactivité vous protège également juridiquement : un problème non signalé peut vous être imputé si la situation empire.</p>
 
-        <h2>📊 La grille de vétusté — ce que vous ne payez pas</h2>
-        <p>La <strong>grille de vétusté</strong> (instaurée par la loi ALUR 2014) est un tableau qui définit la durée de vie théorique des équipements. Elle protège le locataire contre des demandes de remboursement disproportionnées.</p>
+        <h2>Partie 4 — Le décret du 26 août 1987 : liste des réparations locatives</h2>
+        <p>Ce décret constitue la liste officielle et exhaustive des travaux d'entretien courant à la charge du locataire. En voici les grandes catégories :</p>
+
         <div class="example-box">
-          <div class="example-box-title">📋 Durées de vie théoriques (exemples)</div>
+          <div class="example-box-title">📋 Réparations locatives par catégorie (décret du 26 août 1987)</div>
           <table class="responsibility-table">
-            <thead><tr><th>Élément</th><th>Durée de vie</th><th>Ce que ça signifie</th></tr></thead>
+            <thead><tr><th>Catégorie</th><th>Réparations à votre charge</th></tr></thead>
             <tbody>
-              <tr><td>Peintures intérieures</td><td>7 ans</td><td>Une peinture de 5 ans → vous ne remboursez que 2/7 du coût</td></tr>
-              <tr><td>Papier peint</td><td>7 ans</td><td>Un papier de 8 ans qui se décolle → propriétaire à 100%</td></tr>
-              <tr><td>Moquette</td><td>7 ans</td><td>Moquette de 7 ans usée → propriétaire à 100%</td></tr>
-              <tr><td>Parquet vitrifié</td><td>10 ans</td><td>Parquet de 6 ans rayé → vous remboursez 4/10 du coût</td></tr>
-              <tr><td>Robinetterie</td><td>15 ans</td><td>Robinet de 12 ans → vous ne payez que 3/15 du remplacement</td></tr>
+              <tr><td><strong>Ouvertures (portes et fenêtres)</strong></td><td>Graissage des gonds et des charnières, remplacement des poignées et des serrures (hors vétusté), remplacement des joints d'étanchéité, entretien des rails de fenêtres coulissantes</td></tr>
+              <tr><td><strong>Parties communes privatives</strong></td><td>Maintien en propreté des espaces dont vous avez l'usage exclusif</td></tr>
+              <tr><td><strong>Sanitaires et plomberie courante</strong></td><td>Détartrage des robinets et de la robinetterie, remplacement des joints de robinets et de la chasse d'eau, débouchage des siphons et des évacuations, remplacement de l'abattant des WC</td></tr>
+              <tr><td><strong>Équipements électriques</strong></td><td>Remplacement des prises et des interrupteurs défectueux (hors défaut d'installation), remplacement des ampoules et des tubes fluorescents, remplacement des fusibles</td></tr>
+              <tr><td><strong>Chauffage et production d'eau chaude</strong></td><td>Entretien annuel obligatoire de la chaudière par un technicien certifié, remplacement des piles du thermostat, nettoyage des grilles de VMC</td></tr>
+              <tr><td><strong>Murs, sols et plafonds</strong></td><td>Rebouchage des petits trous de vis et de chevilles, retouches de peinture mineures dues à l'usage, raccords de papier peint partiellement décollé</td></tr>
+              <tr><td><strong>Espaces extérieurs</strong></td><td>Tonte de la pelouse, taille des haies et des arbustes, désherbage des allées, entretien du balcon ou de la terrasse</td></tr>
             </tbody>
           </table>
         </div>
-        <div class="callout callout-success">✅ <strong>Bon à savoir :</strong> Si votre propriétaire ne peut pas prouver l'âge exact des équipements, la grille de vétusté s'applique par défaut à votre avantage.</div>
+
+        <h2>Partie 5 — La grille de vétusté : votre protection contre les abus</h2>
+        <p>La <strong>grille de vétusté</strong>, instaurée par la loi ALUR du 24 mars 2014, est un outil de protection du locataire. Elle définit la durée de vie théorique de chaque élément du logement et permet de calculer la part de remplacement qui reste réellement à votre charge en cas de dégradation.</p>
+
+        <h3>5.1 — Principe de calcul</h3>
+        <p>Lorsqu'un élément est endommagé, on calcule sa durée de vie restante selon la formule suivante :</p>
+        <div class="example-box">
+          <div class="example-box-title">🔢 Formule de la grille de vétusté</div>
+          <p><strong>Part locataire = Coût de remplacement × (Durée de vie restante ÷ Durée de vie totale)</strong></p>
+          <p><em>Exemple concret :</em> Une peinture dont la durée de vie est de 7 ans a été posée il y a 5 ans. Elle est dégradée au départ du locataire. Durée de vie restante = 2 ans. Part locataire = coût × (2/7) = 28,5% seulement du coût total.</p>
+        </div>
+
+        <div class="example-box">
+          <div class="example-box-title">📋 Durées de vie théoriques des éléments courants</div>
+          <table class="responsibility-table">
+            <thead><tr><th>Élément</th><th>Durée de vie</th><th>Conséquence pratique</th></tr></thead>
+            <tbody>
+              <tr><td>Peintures intérieures</td><td><strong>7 ans</strong></td><td>Au-delà de 7 ans, le propriétaire supporte 100% du coût</td></tr>
+              <tr><td>Papier peint</td><td><strong>7 ans</strong></td><td>Un papier posé depuis 8 ans et décollé = charge propriétaire à 100%</td></tr>
+              <tr><td>Moquette</td><td><strong>7 ans</strong></td><td>Moquette de 7 ans usée = charge propriétaire à 100%</td></tr>
+              <tr><td>Parquet vitrifié</td><td><strong>10 ans</strong></td><td>Parquet de 6 ans rayé = vous remboursez 4/10 du coût</td></tr>
+              <tr><td>Robinetterie</td><td><strong>15 ans</strong></td><td>Robinet de 12 ans = vous ne payez que 3/15 du remplacement</td></tr>
+              <tr><td>Radiateurs électriques</td><td><strong>15 ans</strong></td><td>Appareil de 14 ans défaillant = 1/15 à votre charge</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout callout-success">✅ <strong>À retenir :</strong> Si votre propriétaire ne peut pas justifier de la date d'installation des équipements, la grille de vétusté s'applique par défaut en votre faveur. Conservez toutes les preuves de l'âge des éléments mentionnés dans votre état des lieux d'entrée.</div>
+
+        <h2>Partie 6 — Communiquer avec votre propriétaire</h2>
+        <p>La relation locataire-propriétaire repose sur la confiance et la communication. Lorsqu'un problème survient au-delà de vos capacités d'intervention, respectez les règles suivantes :</p>
+        <ol>
+          <li><strong>Toujours signaler par écrit</strong> — Un email ou un courrier recommandé constitue une preuve opposable en cas de litige. Un simple appel téléphonique ne suffit pas.</li>
+          <li><strong>Être précis et factuel</strong> — Décrivez le problème avec exactitude : lieu, nature, date d'apparition, évolution constatée.</li>
+          <li><strong>Joindre des photos</strong> — Illustrez votre signalement de photos datées pour constituer un dossier probant.</li>
+          <li><strong>Conserver toutes les copies</strong> — Archivez chaque échange écrit. En cas de litige, c'est votre dossier.</li>
+          <li><strong>Ne jamais attendre</strong> — Un problème non signalé qui s'aggrave peut vous être imputé si le propriétaire prouve que vous en aviez connaissance.</li>
+        </ol>
+
+        <div class="callout callout-warning">⚠️ <strong>Attention aux travaux non autorisés :</strong> Si vous effectuez des réparations relevant de la charge du propriétaire sans son accord préalable écrit, vous ne pourrez généralement pas vous faire rembourser. Seule exception : l'urgence absolue, qui doit être documentée par écrit immédiatement après l'intervention.</div>
+
+        <div class="callout callout-success">✅ <strong>Résumé du chapitre :</strong> Le locataire est responsable de l'entretien courant et des petites réparations. Le propriétaire prend en charge la structure et les équipements vétustes. Les quatre piliers — entretien régulier, utilisation correcte, petites réparations, réactivité — définissent le comportement attendu. La grille de vétusté vous protège contre les demandes de remboursement disproportionnées.</div>
       `,
       quiz: [
         {
@@ -310,12 +432,172 @@ const COURSE_DATA = {
       duration: "20 min",
       points: 50,
       badgeId: "responsable",
-      audioScript: "Dans ce chapitre, nous allons détailler précisément ce que vous devez faire dans chaque pièce de votre logement. De la salle de bain à la cuisine, des sols aux fenêtres, vous aurez une vision complète de vos obligations.",
+      audioScript: "Ce chapitre détaille précisément vos obligations d'entretien, pièce par pièce et surface par surface. Vous apprendrez à adapter votre méthode aux matériaux présents dans votre logement, à éviter les erreurs irréversibles, et à entretenir les équipements dont vous êtes responsable selon la loi.",
       content: `
-        <h2>Vue d'ensemble de vos obligations</h2>
-        <p>L'entretien d'un logement se décompose en <strong>zones et équipements</strong>. Chaque élément a ses spécificités. Cette approche par zone vous permettra de ne rien oublier et de créer une routine efficace.</p>
+        <h2>Objectifs pédagogiques de ce chapitre</h2>
+        <p>À l'issue de ce chapitre, vous serez capable de :</p>
+        <ol>
+          <li>Lister les tâches d'entretien à effectuer dans chaque pièce du logement ;</li>
+          <li>Identifier les matériaux courants et appliquer la méthode de nettoyage adaptée à chacun ;</li>
+          <li>Reconnaître les erreurs d'entretien irréversibles à éviter absolument ;</li>
+          <li>Comprendre les règles de vie en copropriété qui vous concernent directement ;</li>
+          <li>Distinguer ce qui relève de votre charge de ce qui relève de celle du propriétaire.</li>
+        </ol>
 
-        <div class="callout">🎯 <strong>Méthode recommandée :</strong> Abordez l'entretien zone par zone plutôt que de tout faire en même temps. C'est plus efficace et moins décourageant.</div>
+        <h2>Partie 1 — L'entretien par zone</h2>
+        <p>La méthode la plus efficace pour entretenir un logement consiste à l'aborder zone par zone, avec des gestes précis et adaptés à chaque espace. Cette approche structurée garantit qu'aucun élément n'est oublié.</p>
+
+        <h3>1.1 — Les fenêtres et ouvertures</h3>
+        <p>Les fenêtres, portes et volets sont des éléments mécaniques soumis à l'usure. Leur entretien régulier prévient les dysfonctionnements et préserve leur étanchéité.</p>
+        <ul>
+          <li><strong>Nettoyer les vitres</strong> — Au moins deux fois par an, avec un produit vitres ou du vinaigre blanc dilué. Évitez de nettoyer en plein soleil : la chaleur fait sécher le produit trop vite et laisse des traces.</li>
+          <li><strong>Entretenir les rails de fenêtres coulissantes</strong> — Aspirez régulièrement les rails pour éliminer poussières et débris qui empêchent le bon glissement.</li>
+          <li><strong>Graisser les gonds et charnières</strong> — Une légère application de graisse ou d'huile de paraffine tous les six mois prévient les grincements et ralentit l'usure.</li>
+          <li><strong>Remplacer les joints d'étanchéité</strong> — Des joints usés laissent passer l'air froid et l'humidité. Leur remplacement est à la charge du locataire et permet de réduire la consommation de chauffage.</li>
+          <li><strong>Remplacer les poignées défectueuses</strong> — Une poignée qui se desserre ou se casse par l'usage normal est à votre charge.</li>
+        </ul>
+
+        <h3>1.2 — La salle de bain</h3>
+        <p>La salle de bain est la pièce la plus exposée à l'humidité et au calcaire. C'est également celle qui se dégrade le plus rapidement si elle n'est pas entretenue avec régularité. <strong>Le calcaire et l'humidité sont les deux ennemis principaux de la salle de bain.</strong></p>
+        <ul>
+          <li><strong>Détartrer les robinets et la douche chaque mois</strong> — Le calcaire attaque les mécanismes internes des robinets et obstrue progressivement les aérateurs. Utilisez du vinaigre blanc pur appliqué avec un chiffon, laissez agir quinze minutes, rincez.</li>
+          <li><strong>Surveiller et entretenir les joints de carrelage</strong> — Les joints de carrelage (entre les carreaux) et les joints silicone (à l'angle entre le mur et la baignoire ou le receveur de douche) noircissent sous l'effet de l'humidité. Des joints noircis ou décollés laissent infiltrer l'eau derrière les parois, provoquant des dégâts importants.</li>
+          <li><strong>Nettoyer et déboucher les siphons</strong> — Versez régulièrement un mélange de bicarbonate de soude suivi de vinaigre blanc dans les évacuations. Laissez agir trente minutes puis rincez à l'eau bouillante.</li>
+          <li><strong>Entretenir le rideau ou la paroi de douche</strong> — Rincez après chaque usage, nettoyez hebdomadairement. Un rideau trop encrassé ou troué est un consommable à remplacer à votre charge.</li>
+          <li><strong>Entretenir les WC</strong> — Détartrez régulièrement la cuvette, vérifiez le bon fonctionnement de la chasse d'eau. L'abattant cassé est une réparation locative.</li>
+        </ul>
+
+        <h3>1.3 — La cuisine</h3>
+        <p>La cuisine est exposée aux graisses de cuisson, aux odeurs et aux résidus alimentaires. Un entretien insuffisant peut provoquer des incrustations permanentes, voire des risques d'incendie.</p>
+        <ul>
+          <li><strong>Dégraisser les surfaces après chaque cuisson importante</strong> — Plan de travail, crédence, murs autour de la plaque de cuisson. Les projections de graisse, si elles ne sont pas nettoyées rapidement, carbonisent et deviennent impossibles à enlever sans abîmer la surface.</li>
+          <li><strong>Nettoyer les filtres de hotte chaque mois</strong> — Les filtres à graisse de la hotte aspirante s'encrasse rapidement. Des filtres bouchés sont un risque d'incendie : la graisse accumulée peut s'enflammer au contact de la chaleur. Le nettoyage mensuel est une obligation de sécurité.</li>
+          <li><strong>Entretenir le réfrigérateur</strong> — Nettoyez l'intérieur régulièrement avec un produit adapté. Si votre réfrigérateur ne dispose pas du système No Frost, dégivrez-le dès que le givre dépasse un centimètre d'épaisseur.</li>
+          <li><strong>Nettoyer le four après chaque utilisation intensive</strong> — Les résidus carbonisés au fond du four sont très difficiles à éliminer une fois incrustés. Nettoyez à tiède après chaque cuisson grasse.</li>
+          <li><strong>Vérifier les joints du réfrigérateur</strong> — Des joints de porte qui ne ferment plus correctement entraînent une surconsommation d'énergie et une usure prématurée du compresseur.</li>
+          <li><strong>Entretenir l'évier</strong> — Détartrez régulièrement, nettoyez le siphon tous les deux mois, vérifiez l'état du joint de bonde.</li>
+        </ul>
+
+        <h3>1.4 — Les sols et surfaces</h3>
+        <p>Chaque type de sol possède ses propres caractéristiques et exige une méthode d'entretien spécifique. Utiliser la mauvaise méthode sur un sol peut provoquer des dégradations irréversibles.</p>
+        <ul>
+          <li><strong>Parquet flottant ou stratifié</strong> — Aspirer régulièrement, nettoyer avec un chiffon à peine humide et un produit spécifique parquet. Ne jamais utiliser une serpillière mouillée, un nettoyeur vapeur ou de l'ammoniaque : l'eau en excès fait gonfler et soulever les lames de manière définitive.</li>
+          <li><strong>Carrelage céramique</strong> — Laver à l'eau chaude avec du savon noir dilué. Éviter la javel directement sur les joints (elle les corrode).</li>
+          <li><strong>Moquette</strong> — Aspirer deux fois par semaine minimum. Traiter les taches immédiatement en tamponnant, jamais en frottant.</li>
+          <li><strong>Murs</strong> — Enlever les traces de doigts, les éclaboussures et les taches. Une peinture lessivable se nettoie avec une éponge douce légèrement humide.</li>
+          <li><strong>Reboucher les petits trous</strong> — Trous de vis ou de chevilles : enduit de rebouchage, ponçage après séchage, retouche de peinture de la couleur existante.</li>
+        </ul>
+
+        <h3>1.5 — Les équipements et installations</h3>
+        <ul>
+          <li><strong>Remplacer les ampoules</strong> — C'est la réparation locative la plus fréquente. Toutes les ampoules, quelle que soit leur technologie (LED, halogène, fluo), sont à la charge du locataire.</li>
+          <li><strong>Entretenir les prises et interrupteurs</strong> — Les nettoyer, remplacer un interrupteur ou une prise cassés par l'usage.</li>
+          <li><strong>Entretien annuel de la chaudière</strong> — <em>Obligation légale du locataire.</em> Un technicien certifié doit intervenir chaque année. Conservez l'attestation.</li>
+          <li><strong>Nettoyer les grilles de VMC</strong> — Tous les trois à six mois. C'est une réparation locative clairement listée dans le décret de 1987.</li>
+        </ul>
+
+        <h3>1.6 — Les espaces extérieurs</h3>
+        <ul>
+          <li><strong>Balcon ou terrasse</strong> — Nettoyage régulier, débroussaillage si nécessaire, éviter l'accumulation d'eau stagnante.</li>
+          <li><strong>Jardin privatif</strong> — Tonte de la pelouse, taille des haies et arbustes, désherbage des allées. Ces tâches sont à la charge du locataire.</li>
+          <li><strong>Cave et parking</strong> — Maintenir propre et dégagé. Ne stockez jamais de produits inflammables ou dangereux dans ces espaces.</li>
+        </ul>
+
+        <h2>Partie 2 — Entretenir selon les matériaux</h2>
+        <p>L'une des erreurs les plus fréquentes des locataires est d'utiliser un produit ou une méthode inadaptés au matériau traité. Certaines erreurs sont irréversibles et entraînent des retenues sur caution.</p>
+
+        <div class="example-box">
+          <div class="example-box-title">⚠️ Guide des matériaux courants — méthodes et erreurs fatales</div>
+          <table class="responsibility-table">
+            <thead><tr><th>Matériau</th><th>Méthode correcte</th><th>Erreurs à éviter absolument</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><strong>Parquet flottant / stratifié</strong></td>
+                <td>Chiffon à peine humide + produit spécifique parquet. Sécher immédiatement.</td>
+                <td>Eau en excès, serpillière mouillée, nettoyeur vapeur → fait gonfler et soulève les lames de manière irréversible</td>
+              </tr>
+              <tr>
+                <td><strong>Carrelage grès cérame mat</strong></td>
+                <td>Détergent neutre dilué, rinçage soigné, séchage.</td>
+                <td>Vinaigre blanc, acide citrique, produits acides → attaque la surface poreuse et laisse des traces permanentes</td>
+              </tr>
+              <tr>
+                <td><strong>Papier peint</strong></td>
+                <td>Chiffon très légèrement humide, tamponner doucement, ne jamais frotter.</td>
+                <td>Eau, vapeur, spray nettoyant → fait gonfler, décolle et tache le papier définitivement</td>
+              </tr>
+              <tr>
+                <td><strong>Peinture lessivable</strong></td>
+                <td>Éponge douce + eau tiède savonneuse, tamponner. Rincer à l'eau claire.</td>
+                <td>Brosse abrasive, javel concentrée, ammoniaque → attaque le liant et décape la peinture</td>
+              </tr>
+              <tr>
+                <td><strong>Joints silicone (douche/baignoire)</strong></td>
+                <td>Bicarbonate de soude + brosse souple, ou spray anti-moisissures spécifique.</td>
+                <td>Javel répétée → corrode le silicone à long terme et provoque son décollement prématuré</td>
+              </tr>
+              <tr>
+                <td><strong>Inox (évier, robinetterie)</strong></td>
+                <td>Produit inox, polissage dans le sens du grain avec un chiffon doux.</td>
+                <td>Paille de fer → raye définitivement. Javel concentrée → noircit les soudures et les joints</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Partie 3 — Le calcaire : spécificité française</h2>
+        <p>De nombreuses régions françaises sont alimentées par une eau dont la teneur en calcaire est très élevée : Île-de-France, Grand Est, Provence-Alpes-Côte d'Azur, Centre-Val de Loire notamment. Le calcaire se dépose progressivement sur tous les équipements en contact avec l'eau et les abîme si on ne le traite pas régulièrement.</p>
+        <ul>
+          <li><strong>Robinets et mitigeurs</strong> — Des dépôts blancs apparaissent autour des becs et des joints. Appliquez du vinaigre blanc pur avec un chiffon, laissez agir quinze minutes, rincez.</li>
+          <li><strong>Pommeau de douche</strong> — Lorsque les jets deviennent irréguliers, le calcaire obstrue les orifices. Remedy : placez un sac plastique rempli de vinaigre blanc autour du pommeau, maintenez avec un élastique et laissez une nuit entière.</li>
+          <li><strong>Aérateurs de robinets</strong> — La petite grille vissée au bout du robinet (l'aérateur) se détartre en la dévissant, en la trempant dans du vinaigre chaud pendant trente minutes, puis en rinçant. À faire tous les six mois.</li>
+          <li><strong>Machines ménagères</strong> — Détartrez votre lave-linge et votre lave-vaisselle une fois par mois en lançant un programme à vide à 60°C avec 150 grammes d'acide citrique ou 500 ml de vinaigre blanc.</li>
+        </ul>
+
+        <h2>Partie 4 — Règles de vie en copropriété</h2>
+        <p>Si votre logement est situé dans un immeuble en copropriété, vous êtes soumis au règlement de copropriété, qui s'impose à vous au même titre qu'au propriétaire.</p>
+
+        <h3>4.1 — Le règlement de copropriété</h3>
+        <p>Le règlement de copropriété peut notamment interdire les barbecues sur les balcons, imposer des horaires d'utilisation du vide-ordures, réglementer les animaux domestiques ou interdire le stockage d'objets dans les parties communes. Demandez à en prendre connaissance dès votre emménagement.</p>
+
+        <h3>4.2 — Le vide-ordures</h3>
+        <p>Le vide-ordures est un conduit vertical présent dans certains immeubles construits avant les années 1990, permettant de jeter les ordures ménagères depuis chaque palier. Son utilisation est strictement réglementée :</p>
+        <ul>
+          <li><strong>Ce que l'on peut y jeter</strong> — Uniquement les ordures ménagères légères, dans des sacs bien fermés.</li>
+          <li><strong>Ce qui est interdit</strong> — Le verre, les bouteilles, les cartons, les liquides, les piles, les produits chimiques, les objets tranchants. Ces éléments endommagent le conduit et peuvent provoquer des incendies.</li>
+          <li><strong>Les horaires</strong> — Le règlement de copropriété impose généralement des horaires d'utilisation. L'utilisation nocturne est presque toujours interdite.</li>
+          <li><strong>Les vide-ordures condamnés</strong> — Pour des raisons sanitaires et de sécurité incendie, de nombreux vide-ordures ont été condamnés dans les immeubles récents. Vérifiez si celui de votre immeuble est encore en service avant de l'utiliser.</li>
+        </ul>
+
+        <h3>4.3 — Le tri sélectif</h3>
+        <p>Le tri sélectif est une obligation civique et, dans certaines communes, une obligation légale. Les codes couleurs sont harmonisés en France depuis 2022 :</p>
+        <div class="example-box">
+          <div class="example-box-title">♻️ Codes couleurs du tri sélectif</div>
+          <table class="responsibility-table">
+            <thead><tr><th>Couleur du bac</th><th>Ce qu'on y dépose</th><th>Ce qu'on n'y met pas</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Bac jaune</strong></td><td>Emballages plastique, cartons, canettes, briques alimentaires, journaux</td><td>Verre, restes alimentaires, produits dangereux</td></tr>
+              <tr><td><strong>Bac vert (ou colonne)</strong></td><td>Verre uniquement : bouteilles, bocaux, flacons en verre</td><td>Capsules, couvercles métalliques, vaisselle, miroirs, vitres</td></tr>
+              <tr><td><strong>Bac noir/gris</strong></td><td>Ordures ménagères non recyclables : restes alimentaires, couches, emballages souillés</td><td>Tout ce qui va dans les bacs jaune ou vert</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>4.4 — Les nuisances sonores</h3>
+        <p>L'article R1334-31 du Code de la santé publique interdit les bruits de voisinage susceptibles de troubler la tranquillité d'autrui. Les règlements de copropriété fixent généralement les horaires suivants pour les travaux bruyants : autorisés du lundi au vendredi de 8h à 20h, le samedi de 9h à 19h, interdits le dimanche et les jours fériés. Les nuisances sonores nocturnes (après 22h) sont passibles d'une amende.</p>
+
+        <h2>Partie 5 — Ce que le locataire ne doit pas faire</h2>
+        <p>Certaines interventions dépassent le cadre des réparations locatives et ne doivent en aucun cas être réalisées par le locataire sans l'accord écrit du propriétaire :</p>
+        <ul>
+          <li>Intervenir sur l'installation électrique principale (tableau, câblage, disjoncteur général) — <strong>il faut un électricien qualifié</strong></li>
+          <li>Réparer ou remplacer une chaudière, un ballon d'eau chaude ou un cumulus</li>
+          <li>Modifier la structure du logement (abattre une cloison, percer un mur porteur, créer une ouverture)</li>
+          <li>Réaliser des travaux de peinture ou de revêtement importants sans accord écrit du propriétaire</li>
+          <li>Installer une climatisation fixe sans autorisation</li>
+        </ul>
+
+        <div class="callout callout-success">✅ <strong>Résumé du chapitre :</strong> L'entretien d'un logement s'organise zone par zone, avec des méthodes adaptées à chaque matériau. Le calcaire est un ennemi spécifique à traiter régulièrement. Les règles de copropriété (vide-ordures, tri sélectif, nuisances sonores) s'imposent au locataire. Certaines interventions restent réservées aux professionnels qualifiés.</div>
+      `,
 
         <h2>🪟 Fenêtres et ouvertures</h2>
         <p>Les fenêtres et portes sont des éléments mécaniques qui nécessitent un entretien régulier :</p>
@@ -485,10 +767,103 @@ const COURSE_DATA = {
       duration: "18 min",
       points: 50,
       badgeId: "hygiene",
-      audioScript: "Un logement sain est un logement bien aéré, protégé de l'humidité et des nuisibles. Dans ce chapitre, vous allez apprendre les gestes simples qui font toute la différence entre un logement agréable et un logement qui se dégrade.",
+      audioScript: "Un logement sain repose sur trois principes fondamentaux : une aération quotidienne rigoureuse, une gestion active de l'humidité, et une prévention systématique des moisissures et des nuisibles. Ce chapitre vous donne les méthodes concrètes pour maintenir un environnement sain tout au long de l'année.",
       content: `
-        <h2>Pourquoi l'hygiène est-elle essentielle ?</h2>
-        <p>Un logement mal entretenu sur le plan hygiénique peut rapidement devenir une source de problèmes de santé (allergies, voies respiratoires, infections) et de dégradations coûteuses (moisissures, nuisibles, murs abîmés). La bonne nouvelle : quelques gestes simples et réguliers suffisent.</p>
+        <h2>Objectifs pédagogiques de ce chapitre</h2>
+        <p>À l'issue de ce chapitre, vous serez capable de :</p>
+        <ol>
+          <li>Expliquer pourquoi l'aération quotidienne est indispensable et comment la pratiquer correctement ;</li>
+          <li>Identifier les causes et les conséquences d'une humidité excessive dans un logement ;</li>
+          <li>Appliquer le protocole de prévention et de traitement des moisissures ;</li>
+          <li>Mettre en œuvre les mesures préventives contre les nuisibles ;</li>
+          <li>Adapter les gestes d'entretien à chaque saison de l'année.</li>
+        </ol>
+
+        <h2>Partie 1 — L'aération : le geste préventif fondamental</h2>
+        <p>L'aération quotidienne du logement est le geste de prévention le plus simple et le plus efficace qui soit. Elle est à la fois une nécessité sanitaire et une obligation d'entretien du locataire.</p>
+
+        <h3>1.1 — Pourquoi aérer est indispensable</h3>
+        <p>Une famille de quatre personnes produit en moyenne <strong>10 à 15 litres de vapeur d'eau par jour</strong> à l'intérieur du logement, à travers la respiration, la cuisson, les douches et le séchage du linge. Sans aération suffisante, cette vapeur s'accumule dans l'air et pénètre dans les murs, provoquant condensation, moisissures et dégradations des matériaux.</p>
+        <p>Par ailleurs, les produits ménagers, les matériaux de construction et les activités quotidiennes génèrent des composés organiques volatils (COV) qui polluent l'air intérieur. Des études montrent que l'air intérieur peut être <strong>cinq fois plus pollué que l'air extérieur</strong>. L'aération est le seul moyen efficace et gratuit d'y remédier.</p>
+
+        <h3>1.2 — Comment aérer correctement</h3>
+        <ul>
+          <li><strong>Aérer chaque matin, dix minutes minimum</strong> — Ouvrez les fenêtres en grand, idéalement en créant un courant d'air entre deux pièces situées de part et d'autre du logement. Ce renouvellement rapide de l'air est bien plus efficace qu'une fenêtre entrouverte en continu.</li>
+          <li><strong>Aérer après chaque douche</strong> — Maintenez la porte de la salle de bain ouverte ou activez la VMC après chaque douche pendant au moins trente minutes pour évacuer la vapeur.</li>
+          <li><strong>Aérer pendant et après la cuisson</strong> — Allumez la hotte et entrouvrez une fenêtre pour évacuer les vapeurs grasses et l'humidité de cuisson.</li>
+          <li><strong>Aérer pendant le séchage du linge</strong> — Ne séchez jamais le linge dans une pièce fermée. Cette activité libère jusqu'à deux litres d'eau dans l'air par cycle de séchage. Si vous n'avez pas le choix, aérez impérativement la pièce pendant toute la durée du séchage.</li>
+        </ul>
+
+        <div class="callout callout-warning">⚠️ <strong>Même en hiver :</strong> Aérer dix minutes par grand froid reste indispensable. Le renouvellement d'air ne fait pas augmenter significativement votre facture de chauffage, mais prévient des dégradations bien plus coûteuses. Maintenez également une température minimale de <strong>16 à 18°C</strong> dans toutes les pièces, même inoccupées : une pièce froide favorise la condensation sur les murs.</div>
+
+        <h2>Partie 2 — L'humidité : comprendre et contrôler</h2>
+        <p>L'humidité excessive est l'ennemi principal du logement. Elle provoque des dégradations structurelles, favorise le développement des moisissures et constitue un risque pour la santé des occupants.</p>
+
+        <h3>2.1 — Les causes de l'humidité excessive</h3>
+        <ul>
+          <li>La vapeur d'eau produite par les occupants (respiration, transpiration)</li>
+          <li>Les activités domestiques : douches, bains, cuisson, séchage du linge</li>
+          <li>Une VMC coupée, bouchée ou mal entretenue</li>
+          <li>Des fenêtres maintenues fermées en permanence</li>
+          <li>Des meubles placés directement contre les murs extérieurs (ils empêchent la circulation de l'air)</li>
+        </ul>
+
+        <h3>2.2 — Surveiller et contrôler le taux d'humidité</h3>
+        <p>Le taux d'humidité idéal dans un logement est compris entre <strong>40 % et 60 %</strong>. En dessous de 40 %, l'air est trop sec et irrite les voies respiratoires. Au-dessus de 60 %, le risque de développement des moisissures devient très élevé. Un hygromètre (appareil de mesure de l'humidité, disponible pour moins de dix euros) vous permet de surveiller ce taux.</p>
+        <ul>
+          <li>Laissez un espace d'au moins <strong>trois à cinq centimètres</strong> entre vos meubles et les murs extérieurs pour permettre la circulation de l'air.</li>
+          <li>En cas de condensation sur les vitres (gouttelettes d'eau), essuyez immédiatement et aérez : c'est le signe que l'air intérieur est trop chargé en humidité.</li>
+        </ul>
+
+        <h2>Partie 3 — Les moisissures : prévention et traitement</h2>
+        <p>Les moisissures sont des champignons microscopiques qui se développent dans les zones humides et mal ventilées. Elles constituent à la fois un problème de santé (irritations, allergies, troubles respiratoires) et une dégradation du logement pouvant être mise à la charge du locataire.</p>
+
+        <h3>3.1 — Les zones à risque</h3>
+        <p>Les moisissures apparaissent préférentiellement dans les endroits suivants : coins de murs (surtout en angle avec un mur extérieur), bords des fenêtres, derrière les rideaux de douche, sous les tapis, derrière les meubles collés aux murs, dans les joints de carrelage et de silicone.</p>
+
+        <h3>3.2 — Protocole de traitement en cinq étapes</h3>
+        <div class="example-box">
+          <div class="example-box-title">🧹 Procédure de traitement des moisissures</div>
+          <p><strong>Étape 1 — Protection</strong> : Portez des gants en latex et, si la surface est importante, un masque de protection respiratoire (FFP2).</p>
+          <p><strong>Étape 2 — Nettoyage mécanique</strong> : Frottez la zone concernée avec une brosse souple imbibée de vinaigre blanc pur ou d'une solution de bicarbonate de soude (une cuillère à soupe pour un litre d'eau). Laissez agir trente minutes.</p>
+          <p><strong>Étape 3 — Rinçage et séchage</strong> : Rincez à l'eau claire et séchez soigneusement avec un chiffon sec ou un sèche-cheveux.</p>
+          <p><strong>Étape 4 — Traitement préventif</strong> : Appliquez quelques gouttes d'huile essentielle d'arbre à thé (tea tree) diluées dans de l'eau sur la zone traitée. Cet antifongique naturel prévient la réapparition.</p>
+          <p><strong>Étape 5 — Aération renforcée</strong> : Aérez la pièce abondamment pendant quarante-huit heures après le traitement.</p>
+        </div>
+
+        <div class="callout callout-warning">⚠️ <strong>Moisissures récurrentes :</strong> Si les moisissures réapparaissent régulièrement au même endroit malgré vos actions, cela peut indiquer un problème structurel (pont thermique, infiltration d'eau) relevant de la responsabilité du propriétaire. Dans ce cas, documentez avec des photos datées et prévenez votre propriétaire par écrit. Ce signalement vous protège juridiquement.</div>
+
+        <h2>Partie 4 — Les nuisibles : prévention et réaction</h2>
+        <p>Les nuisibles (cafards, souris, fourmis, punaises de lit, moustiques) s'installent dans un logement lorsque les conditions leur sont favorables : nourriture accessible, logement peu propre, accès facile. La prévention est toujours plus efficace et moins coûteuse que le traitement.</p>
+
+        <h3>4.1 — Mesures préventives</h3>
+        <p>La meilleure prévention contre les nuisibles consiste à nettoyer régulièrement, à stocker les aliments hermétiquement et à vider les poubelles souvent. Ces trois actions suppriment les sources de nourriture qui attirent les nuisibles.</p>
+        <ul>
+          <li>Ne laissez aucun reste alimentaire accessible : stockez dans des boîtes hermétiques.</li>
+          <li>Videz les poubelles régulièrement et utilisez des poubelles à couvercle.</li>
+          <li>Ne laissez pas de vaisselle sale plus de quelques heures.</li>
+          <li>Nettoyez régulièrement derrière et sous les meubles de cuisine.</li>
+          <li>Vérifiez les joints de porte et rebouchez les petites fissures (points d'entrée potentiels).</li>
+        </ul>
+
+        <h3>4.2 — En cas de présence avérée</h3>
+        <ul>
+          <li><strong>Cafards, fourmis, souris</strong> — Agissez immédiatement avec des produits adaptés (appâts, pièges). Si l'infestation touche plusieurs logements, prévenez le propriétaire ou le syndic : la désinsectisation peut relever des parties communes.</li>
+          <li><strong>Punaises de lit</strong> — Ne déplacez aucun meuble ni aucun vêtement. Contactez immédiatement un professionnel. Les punaises de lit se propagent très rapidement d'un logement à l'autre.</li>
+        </ul>
+
+        <h2>Partie 5 — L'entretien saisonnier</h2>
+        <p>Les saisons imposent des gestes spécifiques. Anticiper les besoins de chaque période permet d'éviter les problèmes les plus fréquents.</p>
+        <div class="example-box">
+          <div class="example-box-title">🗓️ Calendrier saisonnier des gestes prioritaires</div>
+          <p><strong>🍂 Automne (septembre-octobre) :</strong> Faire réviser la chaudière avant la saison de chauffe. Purger les radiateurs. Vérifier l'étanchéité des fenêtres (joints usés = déperdition de chaleur). Nettoyer les bouches de VMC.</p>
+          <p><strong>❄️ Hiver (novembre-mars) :</strong> Aérer dix minutes par jour même par grand froid — c'est indispensable. Maintenir une température minimale de 16 à 18°C dans toutes les pièces. Ne jamais sécher le linge dans une pièce fermée sans ventilation. En cas d'absence prolongée supérieure à une semaine par grand gel, coupez l'eau et purgez les canalisations.</p>
+          <p><strong>🌸 Printemps (avril-mai) :</strong> Grand ménage avec aération intensive pour évacuer l'humidité accumulée. Inspecter la salle de bain et la cuisine pour détecter les moisissures nascentes. Première tonte et première taille du jardin si vous en disposez.</p>
+          <p><strong>☀️ Été (juin-août) :</strong> Fermer les volets et les rideaux en journée pour maintenir la fraîcheur naturelle (geste peu connu mais très efficace). Ouvrir les fenêtres la nuit pour créer un courant d'air et rafraîchir le logement. Traitement préventif anti-moustiques et anti-nuisibles selon la région.</p>
+        </div>
+
+        <div class="callout callout-success">✅ <strong>Résumé du chapitre :</strong> L'hygiène d'un logement repose sur trois actions fondamentales : aérer dix minutes chaque jour, contrôler le taux d'humidité (idéal entre 40% et 60%) et agir dès les premiers signes de moisissures. La prévention des nuisibles passe par un nettoyage régulier et un stockage hermétique des aliments. Adapter ses gestes aux saisons permet d'anticiper les problèmes avant qu'ils n'apparaissent.</div>
+      `,
 
         <h2>🌬️ L'aération : le geste le plus important</h2>
         <p>Aérer votre logement est le geste préventif numéro un. Il est simple, gratuit, et d'une efficacité redoutable.</p>
